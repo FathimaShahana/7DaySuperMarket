@@ -13,11 +13,23 @@ public class DashBoardPage {
 	}
 
 	@FindBy(xpath="//a[@class='nav-link']/img[@alt='User Image']")
-	public WebElement AdminImage;
+	public WebElement adminImage;
+	
+	@FindBy(xpath="//a[@data-toggle='dropdown']")
+	public WebElement adminImageAndTextButton;
+	
+	@FindBy (xpath="//a[@class='dropdown-item'][2]")
+	public WebElement LogoutButton;
+	
+	public void doLogout()
+	{
+		adminImageAndTextButton.click();
+		LogoutButton.click();
+	}
 	
 	public boolean displayAdminImage()
 	{
-	return	AdminImage.isDisplayed();
+	return	adminImage.isDisplayed();
 	}
 	
 	

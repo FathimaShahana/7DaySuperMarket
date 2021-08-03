@@ -14,7 +14,7 @@ public class ScreenShotUtility {
 	{//takeScreenshot not svaed it in clipboaedr
 		File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		//creat new file no contenrt
-File dest=new File("C:\\Users\\ANVER\\eclipse-workspace\\7DaySuperMarketFrameWork1\\target\\"+fileName);
+File dest=new File("C:\\Users\\ANVER\\eclipse-workspace\\project7rMart\\7DaySuperMarket\\target\\"+fileName);
 	//copy 
 FileUtils.copyFile(screenshot,dest);//to copy file from source
 
