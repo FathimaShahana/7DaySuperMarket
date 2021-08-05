@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="classes">
+  <test thread-count="5" verbose="0" name="Test1Chrome(failed)" parallel="classes">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="validationsOfManageUsersPage.DeleteAUser">
+        <methods>
+          <include name="screenShot"/>
+          <include name="navigateToManageOrderPage"/>
+          <include name="initializeDriver"/>
+          <include name="verifyLockUserChindhuAbraham"/>
+          <include name="deleteUserChindhuAbraham"/>
+          <include name="quitdriver"/>
+        </methods>
+      </class> <!-- validationsOfManageUsersPage.DeleteAUser -->
+    </classes>
+  </test> <!-- Test1Chrome(failed) -->
+  <test thread-count="5" verbose="0" name="Test1firefox(failed)" parallel="classes">
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="validationsOfManageUsersPage.DeleteAUser">
+        <methods>
+          <include name="screenShot"/>
+          <include name="navigateToManageOrderPage"/>
+          <include name="initializeDriver"/>
+          <include name="verifyLockUserChindhuAbraham"/>
+          <include name="deleteUserChindhuAbraham"/>
+          <include name="quitdriver"/>
+        </methods>
+      </class> <!-- validationsOfManageUsersPage.DeleteAUser -->
+    </classes>
+  </test> <!-- Test1firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->

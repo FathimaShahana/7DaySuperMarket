@@ -29,10 +29,12 @@ public class VerifySearchListOrders extends ManageOrdersBaseTest {
 		manageOrderspage.clickOnSearchButton();
 
 		manageOrderspage.clickToSelectpaymentmodeDropDown();
-		manageOrderspage.clicktoselectdropdownCOD();
-
+		manageOrderspage.enterPaymentMode();
+		// manageOrderspage.clicktoselectdropdownCOD();
+		
 		manageOrderspage.clickToSelectStatusDropdown();
-		manageOrderspage.clickToSelectionOfPaidFromDropDown();
+		manageOrderspage.enterstatus();
+		// manageOrderspage.clickToSelectionOfPaidFromDropDown();
 
 		manageOrderspage.clickOnSubmitSearch();
 
@@ -40,5 +42,5 @@ public class VerifySearchListOrders extends ManageOrdersBaseTest {
 		Assert.assertEquals(actual, 5);
 
 	}
-	
+
 }

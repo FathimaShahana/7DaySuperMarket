@@ -1,57 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
-  <test thread-count="5" name="Test1Chrome(failed)" parallel="classes">
-    <parameter name="browserName" value="chrome"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="validationsOfMobileSliderPage.ImageUpload">
-        <methods>
-          <include name="NavigateToMobilesliderPage"/>
-          <include name="quitdriver"/>
-          <include name="verifyImageUpload"/>
-          <include name="initializeDriver"/>
-          <include name="screenShot"/>
-        </methods>
-      </class> <!-- validationsOfMobileSliderPage.ImageUpload -->
-      <class name="validationsOfManageOrderPage.VerifySearchListOrders">
-        <methods>
-          <include name="verifySearchofOrdersInList"/>
-          <include name="initializeDriver"/>
-          <include name="quitdriver"/>
-          <include name="NavigateToAdminUserPage"/>
-          <include name="screenShot"/>
-          <include name="verifyDropDownstatusPaid"/>
-        </methods>
-      </class> <!-- validationsOfManageOrderPage.VerifySearchListOrders -->
-      <class name="validationsOfManageOrderPage.verifyResetButton">
-        <methods>
-          <include name="validateResetButton"/>
-          <include name="initializeDriver"/>
-          <include name="quitdriver"/>
-          <include name="NavigateToAdminUserPage"/>
-          <include name="screenShot"/>
-        </methods>
-      </class> <!-- validationsOfManageOrderPage.verifyResetButton -->
-      <class name="validationsOfManageUsersPage.DeleteAUser">
-        <methods>
-          <include name="screenShot"/>
-          <include name="quitdriver"/>
-          <include name="verifyLockUserChindhuAbraham"/>
-          <include name="deleteUserChindhuAbraham"/>
-          <include name="initializeDriver"/>
-          <include name="navigateToManageOrderPage"/>
-        </methods>
-      </class> <!-- validationsOfManageUsersPage.DeleteAUser -->
       <class name="validationsOfAdminUsersPage.CreateAndDeleteAUser">
         <methods>
           <include name="quitdriver"/>
           <include name="NavigateToAdminUserPage"/>
-          <include name="verifyNewUserCreate"/>
           <include name="screenShot"/>
           <include name="verifyDeleteOfUser"/>
           <include name="initializeDriver"/>
         </methods>
       </class> <!-- validationsOfAdminUsersPage.CreateAndDeleteAUser -->
     </classes>
-  </test> <!-- Test1Chrome(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

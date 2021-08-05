@@ -10,6 +10,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import pages7daySuperMarket.AdminUsersPage;
@@ -20,14 +22,16 @@ public class AdminPageBaseTest {
 	WebDriver driver;
 
 	@BeforeClass
-	public void initializeDriver() {
-		driver = DriverFactory.driverInitialization();
+	@Parameters({ "browserName" })
+	public void initializeDriver(@Optional("chrome") String browser) {
+		driver = DriverFactory.driverInitialization(browser);
+		
 	}
 
 	@BeforeMethod
 	public void NavigateToAdminUserPage() {
+		
 		DriverFactory.loginToGroceryApp(driver);
-
 		AdminUsersPage adminUsersPage = new AdminUsersPage(driver);
 		adminUsersPage.clickOnAdminUsers();
 	}
@@ -43,7 +47,7 @@ public class AdminPageBaseTest {
 
 	@AfterClass
 	public void quitdriver() {
-		 AdminUsersPage adminUsersPage = new AdminUsersPage(driver);
+		AdminUsersPage adminUsersPage = new AdminUsersPage(driver);
 		adminUsersPage.doLogout();
 
 		DriverFactory.driverClose(driver);

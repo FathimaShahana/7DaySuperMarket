@@ -9,8 +9,14 @@ import java.awt.event.KeyEvent;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pages7daySuperMarket.MobileSliderPage;
+import utils.JavaExecutorUtility;
 
 public class ImageUpload extends MobilesliderBaseTest {
 	
@@ -19,14 +25,17 @@ public class ImageUpload extends MobilesliderBaseTest {
 	{
 		MobileSliderPage mobileSliderPage = new MobileSliderPage(driver);
 		mobileSliderPage.clickOnNewButton();
+		
 		mobileSliderPage.selectDropdown();
 		mobileSliderPage.clickOnChooseFileButton();
-		mobileSliderPage.uploadImage("C:\\Users\\ANVER\\Desktop\\img.PNG");
 		
 		mobileSliderPage.clickOnSave();
-		String expected="\r\n" +"            Mobile Slider Created Successfully        ";
+		
 		String actual=mobileSliderPage.getTextInAlertWindow();
+		String expected="�\nAlert!\nMobile Slider Created Successfully";
+		
 		Assert.assertEquals(actual, expected);
+		
 	}
 	
 	

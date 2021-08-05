@@ -3,21 +3,26 @@ package utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Parameters;
 
 import pages7daySuperMarket.LoginPage;
 
 public class DriverFactory {
-	static String browserName = "chrome";
 	
-	public static WebDriver driverInitialization() {
-		if(browserName=="firefox")
+
+	
+	public static WebDriver driverInitialization(String browserName ) {
+		
+		if(browserName.equals("firefox"))
 		{
 			return getFireFoxDriver();
 		}
-		else if(browserName== "chrome")
+		
+		else if(browserName.equals("chrome"))
 		{
 			return getChromeDriver();
 		}
+		
 		else
 		{
 			return getChromeDriver();
@@ -53,5 +58,7 @@ public class DriverFactory {
 		LoginPage loginpageObj = new LoginPage(driver);
 		loginpageObj.login("Admin", "admin");
 	}
+	
+	
 
 }

@@ -38,7 +38,7 @@ public class CreateAndDeleteAUser extends AdminPageBaseTest {
 
 		String actual1 = adminUsersPage.validateAlertPopupAfterDeleteUser();
 		String expected = "×\nAlert!\nUser Deleted Successfully";
-		Assert.assertEquals(actual1, expected);
+		Assert.assertTrue(actual1.equals(expected));
 
 	}
 }

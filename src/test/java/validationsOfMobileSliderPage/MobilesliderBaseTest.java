@@ -9,6 +9,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 import pages7daySuperMarket.AdminUsersPage;
 import pages7daySuperMarket.LoginPage;
@@ -21,11 +23,9 @@ public class MobilesliderBaseTest {
 	WebDriver driver;
 
 	@BeforeClass
-	public void initializeDriver() {
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Program Files\\webdrivers\\chromedriver_win32\\chromedriver.exe");
-		driver = new ChromeDriver();// create object of browser, like a= this is assigned to a
-		driver = GetWaitMethod.getImplicitWait(driver);
+	@Parameters({ "browserName" })
+	public void initializeDriver(@Optional("chrome") String browser) {
+		driver = DriverFactory.driverInitialization(browser);
 
 	}
 
@@ -49,8 +49,8 @@ public class MobilesliderBaseTest {
 
 	@AfterClass
 	public void quitdriver() {
-		AdminUsersPage adminUsersPage = new AdminUsersPage(driver);
-		adminUsersPage.doLogout();
+		MobileSliderPage mobileSliderPage  = new MobileSliderPage(driver);
+		mobileSliderPage.doLogout();
 		
 		DriverFactory.driverClose(driver);
 	}

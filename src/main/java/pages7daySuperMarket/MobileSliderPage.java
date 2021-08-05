@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utils.FileUpload;
+import utils.JavaExecutorUtility;
 
 public class MobileSliderPage {
 
@@ -29,7 +30,7 @@ public class MobileSliderPage {
 	@FindBy(xpath="//select[@id='cat_id']/option[2]")
 	public WebElement dropDownFruitsAndVegitableSelect;
 	
-	@FindBy(xpath="//div[@class=' form-group']/input")
+	@FindBy(xpath="//input[@id='main_img']")
 	public WebElement chooseFileButton;	
 	
 	@FindBy(xpath="//button[@name='create']")
@@ -37,6 +38,13 @@ public class MobileSliderPage {
 	
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")
 	public WebElement alertWindowAfterSave;
+
+	
+	
+	/*public void jseChooseButtonClick()
+	{
+		JavaExecutorUtility.javaExecuterClick ( driver,"document.getElementsByName('main_img')");
+	}(*/
 	
 	public void clickOnSave()
 	{
@@ -49,8 +57,8 @@ public class MobileSliderPage {
 	
 	public void clickOnChooseFileButton()
 	{
-		chooseFileButton.click();
-		//chooseFileButton.submit();
+		chooseFileButton.sendKeys("C:\\Users\\ANVER\\Desktop\\11.PNG");
+		
 
 	}
 	
@@ -74,7 +82,11 @@ public class MobileSliderPage {
 		mobileSliderButton.click();
 		
 	}
-	public void uploadImage(String path) {
-		FileUpload.uploadImage(path);
+	public void uploadImage(WebDriver driver,WebElement element,String path) {
+		FileUpload.uploadImage(driver,element,path);
+	}
+	public void doLogout() {
+		driver.quit();
+		
 	}
 }

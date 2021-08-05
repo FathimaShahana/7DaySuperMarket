@@ -9,6 +9,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 import pages7daySuperMarket.AdminUsersPage;
 import pages7daySuperMarket.DashBoardPage;
@@ -21,8 +23,9 @@ public class DashBoardPageBaseTest {
 	WebDriver driver;
 
 	@BeforeClass
-	public void initializeDriver() {
-		driver = DriverFactory.driverInitialization();
+	@Parameters({ "browserName" })
+	public void initializeDriver(@Optional("chrome") String browser) {
+		driver = DriverFactory.driverInitialization(browser);
 	}
 
 	@BeforeMethod

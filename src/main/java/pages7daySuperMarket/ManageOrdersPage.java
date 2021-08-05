@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class ManageOrdersPage {
 	WebDriver driver;
@@ -57,7 +58,19 @@ public class ManageOrdersPage {
 
 	@FindBy(xpath = "//a[@class='dropdown-item'][2]")
 	public WebElement LogoutButton;
-	
+
+	public void enterstatus() {
+
+		Select statusObj = new Select(statusDropDown);
+		statusObj.selectByVisibleText("Paid");
+	}
+
+	public void enterPaymentMode() {
+
+		Select statusObj = new Select(paymentMode);
+		statusObj.selectByVisibleText("COD");
+	}
+
 	public boolean isDisplayedsearchListOrdersTitle() {
 		return searchListOrdersTitle.isDisplayed();
 	}
@@ -66,22 +79,23 @@ public class ManageOrdersPage {
 		resetButton.click();
 	}
 
+	//
 	public void clickToSelectpaymentmodeDropDown() {
 		paymentMode.click();
 	}
-
-	public void clicktoselectdropdownCOD() {
-		dropdownCOD.click();
-	}
+	
+	// public void clicktoselectdropdownCOD() {
+	// dropdownCOD.click();
+	// }
 
 	public int getsizeOfPaidOrderList() {
 		return tablePaidList.size();
 	}
 
-	public void clickToSelectionOfPaidFromDropDown() {
-		paidSelect.click();
-	}
-
+	// public void clickToSelectionOfPaidFromDropDown() {
+	// paidSelect.click();
+	// }
+	
 	public void clickToSelectStatusDropdown() {
 		statusDropDown.click();
 
@@ -113,6 +127,6 @@ public class ManageOrdersPage {
 	public void doLogout() {
 		adminImageAndTextButton.click();
 		LogoutButton.click();
-		
+
 	}
 }
