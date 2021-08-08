@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="classes">
-
-  <test thread-count="3" name="Test1Chrome" parallel="classes">
-  
-  <parameter name="browserName" value="chrome"></parameter>
-
-  
+<suite name="Suite">
+  <test thread-count="5" name="Test">
     <classes>
-      <class name="validationsOfManageUsersPage.DeleteAUser"/>
-      
+   
+       <class name="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers"/>
+      <class name="validattionsOfLoginPAge.LoginPageTest"/>
+      <class name="validationsOfAdminUsersPage.VerifyResetButton"/>
+      <class name="validationsOfAdminUsersPage.UserCanCreateDifferentUsers"/>
+      <class name="validationsOfManageOrderPage.VerifySearchListOrders"/>
+      <class name="validationsOfManageCategoryPage.AddNewCategory"/>
+      <class name="validationsOfAdminUsersPage.CreateAndDeleteAUser"/>
+      <class name="validationsOfMobileSliderPage.ImageUpload"/>
+      <class name="validationsOfDashBoardPage.DashBoardPageTest"/>
+      <class name="validationsOfManageOrderPage.verifyResetButton"/>
     </classes>
-  </test> 
-  <test thread-count="3" name="Test1firefox" parallel="classes">
-  
- <parameter name="browserName" value="firefox"></parameter>
-
-  
-    <classes>
-      <class name="validationsOfManageUsersPage.DeleteAUser"/>
-      
-    </classes>
-    
-  </test> 
-</suite> 
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

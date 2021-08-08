@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utils.FileUpload;
-import utils.JavaExecutorUtility;
+import utils.JavascriptExecutorUtility;
 
 public class MobileSliderPage {
 
@@ -27,6 +27,7 @@ public class MobileSliderPage {
 	
 	@FindBy(xpath="//select[@id='cat_id']")
 	public WebElement selectCategoryButton;
+	
 	@FindBy(xpath="//select[@id='cat_id']/option[2]")
 	public WebElement dropDownFruitsAndVegitableSelect;
 	
@@ -39,12 +40,11 @@ public class MobileSliderPage {
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")
 	public WebElement alertWindowAfterSave;
 
-	
-	
-	/*public void jseChooseButtonClick()
-	{
-		JavaExecutorUtility.javaExecuterClick ( driver,"document.getElementsByName('main_img')");
-	}(*/
+	@FindBy(xpath = "//a[@data-toggle='dropdown']")
+	public  WebElement adminImageAndTextButton;
+
+	@FindBy(xpath = "//a[@class='dropdown-item'][2]")
+	public  WebElement logoutButton;
 	
 	public void clickOnSave()
 	{
@@ -55,11 +55,9 @@ public class MobileSliderPage {
 	return	alertWindowAfterSave.getText();
 	}
 	
-	public void clickOnChooseFileButton()
+	public void clickOnChooseFileButton(String path)
 	{
-		chooseFileButton.sendKeys("C:\\Users\\ANVER\\Desktop\\11.PNG");
-		
-
+		chooseFileButton.sendKeys(path);
 	}
 	
 	public void selectDropdown()
@@ -85,8 +83,5 @@ public class MobileSliderPage {
 	public void uploadImage(WebDriver driver,WebElement element,String path) {
 		FileUpload.uploadImage(driver,element,path);
 	}
-	public void doLogout() {
-		driver.quit();
-		
-	}
+
 }

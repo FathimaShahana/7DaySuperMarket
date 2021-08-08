@@ -21,14 +21,14 @@ import utils.ScreenShotUtility;
 public class AdminPageBaseTest {
 	WebDriver driver;
 
-	@BeforeClass
+	@BeforeClass(alwaysRun = true)
 	@Parameters({ "browserName" })
 	public void initializeDriver(@Optional("chrome") String browser) {
 		driver = DriverFactory.driverInitialization(browser);
 		
 	}
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void NavigateToAdminUserPage() {
 		
 		DriverFactory.loginToGroceryApp(driver);
@@ -36,20 +36,16 @@ public class AdminPageBaseTest {
 		adminUsersPage.clickOnAdminUsers();
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void screenShot(ITestResult result) throws IOException {
-		if (result.getStatus() == ITestResult.SUCCESS) {
-
-		} else if (result.getStatus() == ITestResult.SUCCESS) {
-			ScreenShotUtility.ScreenShot(driver, result.getName() + "_Failure.png");
-		}
+		DriverFactory.screenShotCondition(driver, result);
 	}
 
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	public void quitdriver() {
 		AdminUsersPage adminUsersPage = new AdminUsersPage(driver);
-		adminUsersPage.doLogout();
+	adminUsersPage.doLogout();
 
-		DriverFactory.driverClose(driver);
-	}
+		DriverFactory.quitDriver(driver);
+}
 }

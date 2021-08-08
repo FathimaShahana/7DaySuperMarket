@@ -40,11 +40,7 @@ public class ManageOrdersBaseTest {
 
 	@AfterMethod
 	public void screenShot(ITestResult result) throws IOException {
-		if (result.getStatus() == ITestResult.SUCCESS) {
-
-		} else if (result.getStatus() == ITestResult.SUCCESS) {
-			ScreenShotUtility.ScreenShot(driver, result.getName() + "_Failure.png");
-		}
+		DriverFactory.screenShotCondition(driver, result);
 	}
 
 	@AfterClass
@@ -52,6 +48,6 @@ public class ManageOrdersBaseTest {
 		ManageOrdersPage manageOrderspage = new ManageOrdersPage(driver);
 		manageOrderspage.doLogout();
 
-			DriverFactory.driverClose(driver);
+			DriverFactory.quitDriver(driver);
 	}
 }

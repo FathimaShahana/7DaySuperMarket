@@ -23,9 +23,7 @@ public class FileUpload {
 		try {
 			robo = new Robot();
 
-			StringSelection stringSelection = new StringSelection(path);
-			Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-			clipboard.setContents(stringSelection, null);
+			copyFilePathIntoClipboard(path);
 
 			robo.keyPress(KeyEvent.VK_CONTROL);
 			robo.keyPress(KeyEvent.VK_V);
@@ -36,5 +34,12 @@ public class FileUpload {
 		catch (AWTException e) {
 			e.printStackTrace();
 		}
+	}
+
+	public static Clipboard copyFilePathIntoClipboard(String path) {
+		StringSelection stringSelection = new StringSelection(path);
+		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+		clipboard.setContents(stringSelection, null);
+		return clipboard;
 	}
 }

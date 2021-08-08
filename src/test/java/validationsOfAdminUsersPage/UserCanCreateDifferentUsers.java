@@ -25,6 +25,7 @@ public class UserCanCreateDifferentUsers extends AdminPageBaseTest {
 		adminUsersPage.enterPassword(Password);
 		adminUsersPage.enterUserType(UserType);
 		adminUsersPage.clickOnSaveButton();
+		
 		ScreenShotUtility.ScreenShot(driver, "fileNameScreenshot1.png");
 
 		String actual = adminUsersPage.getFirstUserInTable();

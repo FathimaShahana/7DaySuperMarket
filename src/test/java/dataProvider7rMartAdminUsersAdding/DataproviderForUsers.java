@@ -11,8 +11,7 @@ public class DataproviderForUsers {
 
 	@DataProvider(name = "dataprovider1")
 	public Object[][] getSignInData() {
-		Object[][] obj = {
-				{ "fathima_" + RandomGenerators.randomNumbers(), "123456", "Admin" },
+		Object[][] obj = { { "fathima_" + RandomGenerators.randomNumbers(), "123456", "Admin" },
 				{ "fathima_" + RandomGenerators.randomNumbers(), "654321", "Partner" },
 				{ "fathima_" + RandomGenerators.randomNumbers(), "678905", "Staff" },
 				{ "fathima_" + RandomGenerators.randomNumbers(), "987654", "Admin" },
@@ -20,13 +19,11 @@ public class DataproviderForUsers {
 
 		return obj;
 	}
-	
-	@DataProvider(name="excelread")
-	public Object[][] getUsersData() throws IOException
-	{
-		return ExcelUtility.ReadData("C:\\Users\\ANVER\\eclipse-workspace\\project7rMart\\7DaySuperMarket\\src\\main\\resources\\Book2AddUsers.xlsx", "sheet1");
-		
+
+	@DataProvider(name = "excelread")
+	public Object[][] getUsersData() throws IOException {
+		return ExcelUtility.ReadData(DataProviderSettings.usersExcelPath, DataProviderSettings.usersExcelSheet);
+
 	}
-	
 
 }

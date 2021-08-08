@@ -15,7 +15,7 @@ public class VerifySearchListOrders extends ManageOrdersBaseTest {
 	{
 		ManageOrdersPage manageOrderspage = new ManageOrdersPage(driver);
 		manageOrderspage.clickOnSearchButton();
-		manageOrderspage.enterInOrderIdTextBox();
+		manageOrderspage.enterInOrderIdTextBox("128");
 		manageOrderspage.clickOnSubmitSearch();
 
 		int actual = manageOrderspage.verifyListofTableCount();
@@ -29,13 +29,11 @@ public class VerifySearchListOrders extends ManageOrdersBaseTest {
 		manageOrderspage.clickOnSearchButton();
 
 		manageOrderspage.clickToSelectpaymentmodeDropDown();
-		manageOrderspage.enterPaymentMode();
-		// manageOrderspage.clicktoselectdropdownCOD();
+		manageOrderspage.enterPaymentMode("COD");
 		
 		manageOrderspage.clickToSelectStatusDropdown();
-		manageOrderspage.enterstatus();
-		// manageOrderspage.clickToSelectionOfPaidFromDropDown();
-
+		manageOrderspage.enterstatus("Paid");
+		
 		manageOrderspage.clickOnSubmitSearch();
 
 		int actual = manageOrderspage.getsizeOfPaidOrderList();

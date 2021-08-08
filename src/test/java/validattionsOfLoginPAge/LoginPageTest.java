@@ -32,7 +32,7 @@ public class LoginPageTest {
 	public void verifyDashBoardPage()
 	{
 		DashBoardPage dashBoardPageObj = new DashBoardPage(driver);
-		boolean isDisplayed =(dashBoardPageObj.displayAdminImage());
+		boolean isDisplayed =(dashBoardPageObj.adminImageDisplayed());
 		Assert.assertTrue(isDisplayed);	
 	}
 	

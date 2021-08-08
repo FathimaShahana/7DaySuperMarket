@@ -29,26 +29,22 @@ public class ManageCategoryPageBaseTest {
 	public void NavigateToAdminUserPage() {
 		DriverFactory.loginToGroceryApp(driver);
 
-		ManageCategoryPage  manageCategoryPage = new ManageCategoryPage(driver);
-		manageCategoryPage.clickOnmanageCategoryButton();
+		ManageCategoryPage manageCategoryPage = new ManageCategoryPage(driver);
+		manageCategoryPage.navigateToManageCategoryButton();
+		manageCategoryPage.clickOnCategoryRadioButton();
 	}
 
 	@AfterMethod
 	public void screenShot(ITestResult result) throws IOException {
-		if (result.getStatus() == ITestResult.SUCCESS) {
-
-		} else if (result.getStatus() == ITestResult.SUCCESS) {
-			ScreenShotUtility.ScreenShot(driver, result.getName() + "_Failure.png");
-		}
+		DriverFactory.screenShotCondition(driver, result);
+		ManageCategoryPage manageCategoryPage = new ManageCategoryPage(driver);
+		manageCategoryPage.doLogout();
 	}
 
 	@AfterClass
 	public void quitdriver() {
-		ManageCategoryPage  manageCategoryPage = new ManageCategoryPage(driver);
-		manageCategoryPage.doLogout();
-
-		DriverFactory.driverClose(driver);
+		
+		
+		DriverFactory.quitDriver(driver);
 	}
 }
-
-

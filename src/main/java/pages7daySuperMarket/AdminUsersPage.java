@@ -75,7 +75,10 @@ public class AdminUsersPage {
 
 	@FindBy(xpath = "//a[@class='dropdown-item'][2]")
 	public WebElement LogoutButton;
-
+public void doDelete()
+{
+	deleteIconForAUser.click();
+}
 	public void doLogout() {
 		adminImageAndTextButton.click();
 		LogoutButton.click();
@@ -85,30 +88,8 @@ public class AdminUsersPage {
 		return alertPopUpAfterDeletingAUser.getText();
 	}
 
-	public void enterUsernameForFathima123() {
-		userNameInputField.sendKeys("Fathima123");
-	}
-
-	public void clickOnSaveButtonForFathima123() {
-		saveButton.click();
-	}
-
-	public void enterUserTypeForFathima123() {
-		userTypeInputField.sendKeys("Admin");
-	}
-
-	public void enterPasswordForFathima123() {
-		passwordInputField.sendKeys("Password");
-	}
-
-	public void clickOnDeleteIconofFathima123() {
-		deleteIconForAUser.click();
-
-	}
-
 	public boolean isTitleSearchAdminUsersDisplayed() {
 		return searchAdminUsersTitle.isDisplayed();
-
 	}
 
 	public int getListedUsersCount() {
@@ -130,11 +111,8 @@ public class AdminUsersPage {
 	}
 
 	public void enterSearchUserType(String UserType) {
-		// searchUserType.clear();
-
 		Select userTypeObj1 = new Select(searchUserType);
 		userTypeObj1.selectByVisibleText(UserType);
-		// searchUserType.sendKeys(Usertype);
 	}
 
 	public void clickOnSearchButton() {
@@ -150,10 +128,8 @@ public class AdminUsersPage {
 	}
 
 	public void enterUserType(String UserType) {
-
 		Select userTypeobj = new Select(userTypeInputField);
 		userTypeobj.selectByVisibleText(UserType);
-
 	}
 
 	public void enterPassword(String Password) {

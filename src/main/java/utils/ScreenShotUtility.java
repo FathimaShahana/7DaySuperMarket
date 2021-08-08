@@ -11,9 +11,9 @@ import org.openqa.selenium.WebDriver;
 public class ScreenShotUtility {
 
 	public static void ScreenShot(WebDriver driver, String fileName) throws IOException {
-		// takeScreenshot not svaed it in clipboaedr
+		// takeScreenshot not svaed it in clipboaede
 		File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// creat new file no contenrt
+		// creat new file no content
 		File dest = new File(
 				"C:\\Users\\ANVER\\eclipse-workspace\\project7rMart\\7DaySuperMarket\\target\\" + fileName);
 		// copy

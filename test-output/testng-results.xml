@@ -1,66 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="158346" started-at="2021-08-05T10:15:33Z" finished-at="2021-08-05T10:18:12Z">
+  <suite name="Suite" duration-ms="48960" started-at="2021-08-08T12:37:47Z" finished-at="2021-08-08T12:38:36Z">
     <groups>
+      <group name="Sanity">
+        <method signature="CreateAndDeleteAUser.verifyDeleteOfUser()[pri:1, instance:validationsOfAdminUsersPage.CreateAndDeleteAUser@464bee09]" name="verifyDeleteOfUser" class="validationsOfAdminUsersPage.CreateAndDeleteAUser"/>
+        <method signature="CreateAndDeleteAUser.verifyNewUserCreate()[pri:0, instance:validationsOfAdminUsersPage.CreateAndDeleteAUser@464bee09]" name="verifyNewUserCreate" class="validationsOfAdminUsersPage.CreateAndDeleteAUser"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="CreateAndDeleteAUser.verifyDeleteOfUser()[pri:1, instance:validationsOfAdminUsersPage.CreateAndDeleteAUser@464bee09]" name="verifyDeleteOfUser" class="validationsOfAdminUsersPage.CreateAndDeleteAUser"/>
+        <method signature="CreateAndDeleteAUser.verifyNewUserCreate()[pri:0, instance:validationsOfAdminUsersPage.CreateAndDeleteAUser@464bee09]" name="verifyNewUserCreate" class="validationsOfAdminUsersPage.CreateAndDeleteAUser"/>
+        <method signature="VerifyResetButton.verifyResetButton()[pri:0, instance:validationsOfAdminUsersPage.VerifyResetButton@f6c48ac]" name="verifyResetButton" class="validationsOfAdminUsersPage.VerifyResetButton"/>
+      </group> <!-- Regression -->
     </groups>
-    <test name="Default test" duration-ms="158346" started-at="2021-08-05T10:15:33Z" finished-at="2021-08-05T10:18:12Z">
+    <test name="validationOfAdminUserspage" duration-ms="48960" started-at="2021-08-08T12:37:47Z" finished-at="2021-08-08T12:38:36Z">
       <class name="validationsOfAdminUsersPage.CreateAndDeleteAUser">
-        <test-method status="PASS" signature="initializeDriver(java.lang.String)[pri:0, instance:validationsOfAdminUsersPage.CreateAndDeleteAUser@22555ebf]" name="initializeDriver" is-config="true" duration-ms="89660" started-at="2021-08-05T10:15:33Z" finished-at="2021-08-05T10:17:03Z">
+        <test-method status="PASS" signature="initializeDriver(java.lang.String)[pri:0, instance:validationsOfAdminUsersPage.CreateAndDeleteAUser@464bee09]" name="initializeDriver" is-config="true" duration-ms="4525" started-at="2021-08-08T12:37:47Z" finished-at="2021-08-08T12:37:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method status="PASS" signature="NavigateToAdminUserPage()[pri:0, instance:validationsOfAdminUsersPage.CreateAndDeleteAUser@22555ebf]" name="NavigateToAdminUserPage" is-config="true" duration-ms="12454" started-at="2021-08-05T10:17:03Z" finished-at="2021-08-05T10:17:16Z">
+        <test-method status="PASS" signature="NavigateToAdminUserPage()[pri:0, instance:validationsOfAdminUsersPage.CreateAndDeleteAUser@464bee09]" name="NavigateToAdminUserPage" is-config="true" duration-ms="6298" started-at="2021-08-08T12:37:52Z" finished-at="2021-08-08T12:37:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NavigateToAdminUserPage -->
-        <test-method status="PASS" signature="verifyNewUserCreate()[pri:0, instance:validationsOfAdminUsersPage.CreateAndDeleteAUser@22555ebf]" name="verifyNewUserCreate" duration-ms="2361" started-at="2021-08-05T10:17:16Z" finished-at="2021-08-05T10:17:18Z">
+        <test-method status="PASS" signature="verifyNewUserCreate()[pri:0, instance:validationsOfAdminUsersPage.CreateAndDeleteAUser@464bee09]" name="verifyNewUserCreate" duration-ms="3148" started-at="2021-08-08T12:37:58Z" finished-at="2021-08-08T12:38:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNewUserCreate -->
-        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:validationsOfAdminUsersPage.CreateAndDeleteAUser@22555ebf]" name="screenShot" is-config="true" duration-ms="0" started-at="2021-08-05T10:17:18Z" finished-at="2021-08-05T10:17:18Z">
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:validationsOfAdminUsersPage.CreateAndDeleteAUser@464bee09]" name="screenShot" is-config="true" duration-ms="2" started-at="2021-08-08T12:38:01Z" finished-at="2021-08-08T12:38:01Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyNewUserCreate status=SUCCESS method=CreateAndDeleteAUser.verifyNewUserCreate()[pri:0, instance:validationsOfAdminUsersPage.CreateAndDeleteAUser@22555ebf] output={null}]]]>
+                <![CDATA[[TestResult name=verifyNewUserCreate status=SUCCESS method=CreateAndDeleteAUser.verifyNewUserCreate()[pri:0, instance:validationsOfAdminUsersPage.CreateAndDeleteAUser@464bee09] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method status="PASS" signature="NavigateToAdminUserPage()[pri:0, instance:validationsOfAdminUsersPage.CreateAndDeleteAUser@22555ebf]" name="NavigateToAdminUserPage" is-config="true" duration-ms="2330" started-at="2021-08-05T10:17:18Z" finished-at="2021-08-05T10:17:20Z">
+        <test-method status="PASS" signature="NavigateToAdminUserPage()[pri:0, instance:validationsOfAdminUsersPage.CreateAndDeleteAUser@464bee09]" name="NavigateToAdminUserPage" is-config="true" duration-ms="3929" started-at="2021-08-08T12:38:28Z" finished-at="2021-08-08T12:38:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NavigateToAdminUserPage -->
-        <test-method status="PASS" signature="verifyDeleteOfUser()[pri:1, instance:validationsOfAdminUsersPage.CreateAndDeleteAUser@22555ebf]" name="verifyDeleteOfUser" duration-ms="45169" started-at="2021-08-05T10:17:20Z" finished-at="2021-08-05T10:18:05Z">
+        <test-method status="PASS" signature="verifyDeleteOfUser()[pri:1, instance:validationsOfAdminUsersPage.CreateAndDeleteAUser@464bee09]" name="verifyDeleteOfUser" duration-ms="2030" started-at="2021-08-08T12:38:32Z" finished-at="2021-08-08T12:38:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDeleteOfUser -->
-        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:validationsOfAdminUsersPage.CreateAndDeleteAUser@22555ebf]" name="screenShot" is-config="true" duration-ms="0" started-at="2021-08-05T10:18:05Z" finished-at="2021-08-05T10:18:05Z">
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:validationsOfAdminUsersPage.CreateAndDeleteAUser@464bee09]" name="screenShot" is-config="true" duration-ms="1" started-at="2021-08-08T12:38:34Z" finished-at="2021-08-08T12:38:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyDeleteOfUser status=SUCCESS method=CreateAndDeleteAUser.verifyDeleteOfUser()[pri:1, instance:validationsOfAdminUsersPage.CreateAndDeleteAUser@22555ebf] output={null}]]]>
+                <![CDATA[[TestResult name=verifyDeleteOfUser status=SUCCESS method=CreateAndDeleteAUser.verifyDeleteOfUser()[pri:1, instance:validationsOfAdminUsersPage.CreateAndDeleteAUser@464bee09] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method status="PASS" signature="quitdriver()[pri:0, instance:validationsOfAdminUsersPage.CreateAndDeleteAUser@22555ebf]" name="quitdriver" is-config="true" duration-ms="6222" started-at="2021-08-05T10:18:05Z" finished-at="2021-08-05T10:18:12Z">
+        <test-method status="PASS" signature="quitdriver()[pri:0, instance:validationsOfAdminUsersPage.CreateAndDeleteAUser@464bee09]" name="quitdriver" is-config="true" duration-ms="2601" started-at="2021-08-08T12:38:34Z" finished-at="2021-08-08T12:38:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitdriver -->
       </class> <!-- validationsOfAdminUsersPage.CreateAndDeleteAUser -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="validationsOfAdminUsersPage.VerifyResetButton">
+        <test-method status="PASS" signature="initializeDriver(java.lang.String)[pri:0, instance:validationsOfAdminUsersPage.VerifyResetButton@f6c48ac]" name="initializeDriver" is-config="true" duration-ms="6629" started-at="2021-08-08T12:38:01Z" finished-at="2021-08-08T12:38:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method status="PASS" signature="NavigateToAdminUserPage()[pri:0, instance:validationsOfAdminUsersPage.VerifyResetButton@f6c48ac]" name="NavigateToAdminUserPage" is-config="true" duration-ms="11171" started-at="2021-08-08T12:38:08Z" finished-at="2021-08-08T12:38:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateToAdminUserPage -->
+        <test-method status="PASS" signature="verifyResetButton()[pri:0, instance:validationsOfAdminUsersPage.VerifyResetButton@f6c48ac]" name="verifyResetButton" duration-ms="1955" started-at="2021-08-08T12:38:19Z" finished-at="2021-08-08T12:38:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResetButton -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:validationsOfAdminUsersPage.VerifyResetButton@f6c48ac]" name="screenShot" is-config="true" duration-ms="1" started-at="2021-08-08T12:38:21Z" finished-at="2021-08-08T12:38:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyResetButton status=SUCCESS method=VerifyResetButton.verifyResetButton()[pri:0, instance:validationsOfAdminUsersPage.VerifyResetButton@f6c48ac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method status="PASS" signature="quitdriver()[pri:0, instance:validationsOfAdminUsersPage.VerifyResetButton@f6c48ac]" name="quitdriver" is-config="true" duration-ms="6597" started-at="2021-08-08T12:38:21Z" finished-at="2021-08-08T12:38:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitdriver -->
+      </class> <!-- validationsOfAdminUsersPage.VerifyResetButton -->
+    </test> <!-- validationOfAdminUserspage -->
+  </suite> <!-- Suite -->
 </testng-results>

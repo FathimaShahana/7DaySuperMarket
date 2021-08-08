@@ -7,12 +7,12 @@ import pages7daySuperMarket.AdminUsersPage;
 import pages7daySuperMarket.DashBoardPage;
 
 public class DashBoardPageTest extends  DashBoardPageBaseTest{
-	@Test
-	public void methd()
+	@Test(groups= {"Sanity"})
+	public void isAdminImageDisplayed()
 	{
 		DashBoardPage dashboardPage = new DashBoardPage(driver);
 	
-		boolean actual=dashboardPage.displayAdminImage();
+		boolean actual=dashboardPage.adminImageDisplayed();
 		boolean expected=true;
 		Assert.assertEquals(actual, expected);
 		

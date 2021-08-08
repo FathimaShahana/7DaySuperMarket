@@ -72,7 +72,6 @@
 				<configuration>
 					<suiteXmlFiles>
 						<suiteXmlFile>7daySuperMarketUserPageValidationsTest.xml</suiteXmlFile>
-						-->
 					</suiteXmlFiles>
 
 					<testFailureIgnore>true</testFailureIgnore>

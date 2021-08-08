@@ -40,19 +40,12 @@ public class MobilesliderBaseTest {
 
 	@AfterMethod
 	public void screenShot(ITestResult result) throws IOException {
-		if (result.getStatus() == ITestResult.SUCCESS) {
-
-		} else if (result.getStatus() == ITestResult.SUCCESS) {
-			ScreenShotUtility.ScreenShot(driver, result.getName() + "_Failure.png");
-		}
+		DriverFactory.screenShotCondition(driver, result);
 	}
 
 	@AfterClass
 	public void quitdriver() {
-		MobileSliderPage mobileSliderPage  = new MobileSliderPage(driver);
-		mobileSliderPage.doLogout();
-		
-		DriverFactory.driverClose(driver);
+		DriverFactory.quitDriver(driver);
 	}
 
 }

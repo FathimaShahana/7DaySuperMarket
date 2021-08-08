@@ -1,52 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 230.833 sec <<< FAILURE! - in TestSuite
-verifyLockUserChindhuAbraham(validationsOfManageUsersPage.DeleteAUser)  Time elapsed: 0.679 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: //td[text()='Chindhu Abraham					  					  ']/following-sibling::*[5]/a[1]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'ANVER-PC', ip: '192.168.118.124', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_281'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\ANVER\AppData\Local\Temp\rust_mozprofilehFbCe2, moz:geckodriverVersion=0.29.1, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, moz:headless=false, platform=WINDOWS, proxy=Proxy(), moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=true, browserVersion=90.0.2, moz:shutdownTimeout=60000, platformVersion=6.1, moz:processID=7276, browserName=firefox, moz:buildID=20210721174149, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, moz:webdriverClick=true}]
-Session ID: 763257fc-b445-43fe-aea7-13c933842a33
-*** Element info: {Using=xpath, value=//td[text()='Chindhu Abraham					  					  ']/following-sibling::*[5]/a[1]}
-	at validationsOfManageUsersPage.DeleteAUser.verifyLockUserChindhuAbraham(DeleteAUser.java:14)
-
-deleteUserChindhuAbraham(validationsOfManageUsersPage.DeleteAUser)  Time elapsed: 0.365 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: //td[text()='Chindhu Abraham					  					  ']/following-sibling::*[5]/a[1]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'ANVER-PC', ip: '192.168.118.124', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_281'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\ANVER\AppData\Local\Temp\rust_mozprofilehFbCe2, moz:geckodriverVersion=0.29.1, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, moz:headless=false, platform=WINDOWS, proxy=Proxy(), moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=true, browserVersion=90.0.2, moz:shutdownTimeout=60000, platformVersion=6.1, moz:processID=7276, browserName=firefox, moz:buildID=20210721174149, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, moz:webdriverClick=true}]
-Session ID: 763257fc-b445-43fe-aea7-13c933842a33
-*** Element info: {Using=xpath, value=//td[text()='Chindhu Abraham					  					  ']/following-sibling::*[5]/a[1]}
-	at validationsOfManageUsersPage.DeleteAUser.deleteUserChindhuAbraham(DeleteAUser.java:24)
-
-verifyLockUserChindhuAbraham(validationsOfManageUsersPage.DeleteAUser)  Time elapsed: 0.322 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: //td[text()='Chindhu Abraham					  					  ']/following-sibling::*[5]/a[1]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'ANVER-PC', ip: '192.168.118.124', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_281'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\ANVER\AppData\Local\Temp\rust_mozprofilehLq9nG, moz:geckodriverVersion=0.29.1, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, moz:headless=false, platform=WINDOWS, proxy=Proxy(), moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=true, browserVersion=90.0.2, moz:shutdownTimeout=60000, platformVersion=6.1, moz:processID=7324, browserName=firefox, moz:buildID=20210721174149, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, moz:webdriverClick=true}]
-Session ID: df873635-5ac2-43f0-b8f1-d017860083a0
-*** Element info: {Using=xpath, value=//td[text()='Chindhu Abraham					  					  ']/following-sibling::*[5]/a[1]}
-	at validationsOfManageUsersPage.DeleteAUser.verifyLockUserChindhuAbraham(DeleteAUser.java:14)
-
-deleteUserChindhuAbraham(validationsOfManageUsersPage.DeleteAUser)  Time elapsed: 0.23 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: //td[text()='Chindhu Abraham					  					  ']/following-sibling::*[5]/a[1]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'ANVER-PC', ip: '192.168.118.124', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_281'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\ANVER\AppData\Local\Temp\rust_mozprofilehLq9nG, moz:geckodriverVersion=0.29.1, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, moz:headless=false, platform=WINDOWS, proxy=Proxy(), moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=true, browserVersion=90.0.2, moz:shutdownTimeout=60000, platformVersion=6.1, moz:processID=7324, browserName=firefox, moz:buildID=20210721174149, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, moz:webdriverClick=true}]
-Session ID: df873635-5ac2-43f0-b8f1-d017860083a0
-*** Element info: {Using=xpath, value=//td[text()='Chindhu Abraham					  					  ']/following-sibling::*[5]/a[1]}
-	at validationsOfManageUsersPage.DeleteAUser.deleteUserChindhuAbraham(DeleteAUser.java:24)
+Tests run: 15, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 134.553 sec <<< FAILURE! - in TestSuite
+verifyImageUpload(validationsOfMobileSliderPage.ImageUpload)  Time elapsed: 3.278 sec  <<< FAILURE!
+java.lang.AssertionError: 
+expected [�
+Alert!
+Mobile Slider Created Successfully] but found [?
+Alert!
+Mobile Slider Created Successfully]
+	at validationsOfMobileSliderPage.ImageUpload.verifyImageUpload(ImageUpload.java:37)
 

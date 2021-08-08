@@ -14,7 +14,7 @@ public class verifyResetButton extends ManageOrdersBaseTest {
 		ManageOrdersPage manageOrderspage = new ManageOrdersPage(driver);
 
 		manageOrderspage.clickOnSearchButton();
-		manageOrderspage.enterInOrderIdTextBox();
+		manageOrderspage.enterInOrderIdTextBox("128");
 
 		manageOrderspage.clickOnResetButton();
 

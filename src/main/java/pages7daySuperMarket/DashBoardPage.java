@@ -7,31 +7,28 @@ import org.openqa.selenium.support.PageFactory;
 
 public class DashBoardPage {
 	WebDriver driver;
+
 	public DashBoardPage(WebDriver driver) {
-		this.driver = driver;// driver mthd contstr variabledriver,thidriver this class
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath="//a[@class='nav-link']/img[@alt='User Image']")
+	@FindBy(xpath = "//a[@class='nav-link']/img[@alt='User Image']")
 	public WebElement adminImage;
-	
-	@FindBy(xpath="//a[@data-toggle='dropdown']")
+
+	@FindBy(xpath = "//a[@data-toggle='dropdown']")
 	public WebElement adminImageAndTextButton;
-	
-	@FindBy (xpath="//a[@class='dropdown-item'][2]")
+
+	@FindBy(xpath = "//a[@class='dropdown-item'][2]")
 	public WebElement LogoutButton;
-	
-	public void doLogout()
-	{
+
+	public void doLogout() {
 		adminImageAndTextButton.click();
 		LogoutButton.click();
 	}
-	
-	public boolean displayAdminImage()
-	{
-	return	adminImage.isDisplayed();
+
+	public boolean adminImageDisplayed() {
+		return adminImage.isDisplayed();
 	}
-	
-	
 
 }

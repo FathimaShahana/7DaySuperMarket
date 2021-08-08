@@ -14,24 +14,24 @@ import pages7daySuperMarket.AdminUsersPage;
 
 public class CreateAndDeleteAUser extends AdminPageBaseTest {
 
-	@Test(priority = 0)
+	@Test(priority = 0,groups= {"Sanity","Regression" })
 	public void verifyNewUserCreate() {
 		AdminUsersPage adminUsersPage = new AdminUsersPage(driver);
 		adminUsersPage.clickOnNewUserButton();
-		adminUsersPage.enterUsernameForFathima123();
-		adminUsersPage.enterPasswordForFathima123();
-		adminUsersPage.enterUserTypeForFathima123();
-		adminUsersPage.clickOnSaveButtonForFathima123();
+		adminUsersPage.enterUsername("Fathima123");
+		adminUsersPage.enterPassword("12334");
+		adminUsersPage.enterUserType("Admin");
+		adminUsersPage.clickOnSaveButton();
 
 		String actual = adminUsersPage.getFirstUserInTable();
 		Assert.assertEquals(actual, "Fathima123");
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1,groups = {"Sanity","Regression" })
 	public void verifyDeleteOfUser() {
 
 		AdminUsersPage adminUsersPage = new AdminUsersPage(driver);
-		adminUsersPage.clickOnDeleteIconofFathima123();
+		adminUsersPage.doDelete();
 
 		Alert alertObj = driver.switchTo().alert();
 		alertObj.accept();

@@ -16,7 +16,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pages7daySuperMarket.MobileSliderPage;
-import utils.JavaExecutorUtility;
+import utils.JavascriptExecutorUtility;
 
 public class ImageUpload extends MobilesliderBaseTest {
 	
@@ -27,7 +27,7 @@ public class ImageUpload extends MobilesliderBaseTest {
 		mobileSliderPage.clickOnNewButton();
 		
 		mobileSliderPage.selectDropdown();
-		mobileSliderPage.clickOnChooseFileButton();
+		mobileSliderPage.clickOnChooseFileButton("C:\\Users\\ANVER\\Desktop\\11.PNG");
 		
 		mobileSliderPage.clickOnSave();
 		

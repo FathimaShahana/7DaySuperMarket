@@ -57,18 +57,18 @@ public class ManageOrdersPage {
 	public WebElement adminImageAndTextButton;
 
 	@FindBy(xpath = "//a[@class='dropdown-item'][2]")
-	public WebElement LogoutButton;
+	public WebElement logoutButton;
 
-	public void enterstatus() {
+	public void enterstatus(String status) {
 
 		Select statusObj = new Select(statusDropDown);
-		statusObj.selectByVisibleText("Paid");
+		statusObj.selectByVisibleText(status);
 	}
 
-	public void enterPaymentMode() {
+	public void enterPaymentMode(String mode) {
 
 		Select statusObj = new Select(paymentMode);
-		statusObj.selectByVisibleText("COD");
+		statusObj.selectByVisibleText(mode);
 	}
 
 	public boolean isDisplayedsearchListOrdersTitle() {
@@ -84,17 +84,12 @@ public class ManageOrdersPage {
 		paymentMode.click();
 	}
 	
-	// public void clicktoselectdropdownCOD() {
-	// dropdownCOD.click();
-	// }
 
 	public int getsizeOfPaidOrderList() {
 		return tablePaidList.size();
 	}
 
-	// public void clickToSelectionOfPaidFromDropDown() {
-	// paidSelect.click();
-	// }
+	
 	
 	public void clickToSelectStatusDropdown() {
 		statusDropDown.click();
@@ -114,8 +109,8 @@ public class ManageOrdersPage {
 		clickOnSearch.click();
 	}
 
-	public void enterInOrderIdTextBox() {
-		orderIdTextBox.sendKeys("492");
+	public void enterInOrderIdTextBox(String id) {
+		orderIdTextBox.sendKeys(id);
 
 	}
 
@@ -126,7 +121,7 @@ public class ManageOrdersPage {
 
 	public void doLogout() {
 		adminImageAndTextButton.click();
-		LogoutButton.click();
+		logoutButton.click();
 
 	}
 }
