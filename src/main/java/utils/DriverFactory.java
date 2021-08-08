@@ -22,21 +22,21 @@ public class DriverFactory {
 			return getChromeDriver();
 		}
 
-	else {
-		return getChromeDriver();
-	
+		else {
+			return getChromeDriver();
+
 		}
 	}
 
 	private static WebDriver getChromeDriver() {
-		System.setProperty(DriverSettings.chromeKey,DriverSettings.chromeLocation);
+		System.setProperty(DriverSettings.chromeKey, DriverSettings.chromeLocation);
 		WebDriver driver = new ChromeDriver();
 		driver = GetWaitMethod.getImplicitWait(driver);
 		return driver;
 	}
 
 	private static WebDriver getFireFoxDriver() {
-		System.setProperty(DriverSettings.firefoxKey,DriverSettings.firefoxLocation);
+		System.setProperty(DriverSettings.firefoxKey, DriverSettings.firefoxLocation);
 		WebDriver driver = new FirefoxDriver();
 		return driver;
 	}
@@ -46,16 +46,15 @@ public class DriverFactory {
 		driver.get(ApplicationSettings.loginUrl);
 
 		LoginPage loginpageObj = new LoginPage(driver);
-		loginpageObj.login( ApplicationSettings.username,ApplicationSettings.password);
-		WindowSettings .maximiseWindow(driver);
-		
+		loginpageObj.login(ApplicationSettings.username, ApplicationSettings.password);
+		WindowSettings.maximiseWindow(driver);
+
 	}
 
 	public static void screenShotCondition(WebDriver driver, ITestResult result) throws IOException {
 		if (result.getStatus() == ITestResult.SUCCESS) {
 
-		}
-		else if (result.getStatus() == ITestResult.SUCCESS) {
+		} else if (result.getStatus() == ITestResult.FAILURE) {
 			ScreenShotUtility.ScreenShot(driver, result.getName() + "_Failure.png");
 		}
 	}
@@ -63,5 +62,5 @@ public class DriverFactory {
 	public static void quitDriver(WebDriver driver) {
 		driver.quit();
 	}
-	
+
 }

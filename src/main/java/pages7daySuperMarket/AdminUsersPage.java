@@ -75,10 +75,11 @@ public class AdminUsersPage {
 
 	@FindBy(xpath = "//a[@class='dropdown-item'][2]")
 	public WebElement LogoutButton;
-public void doDelete()
-{
-	deleteIconForAUser.click();
-}
+
+	public void doDelete() {
+		deleteIconForAUser.click();
+	}
+
 	public void doLogout() {
 		adminImageAndTextButton.click();
 		LogoutButton.click();

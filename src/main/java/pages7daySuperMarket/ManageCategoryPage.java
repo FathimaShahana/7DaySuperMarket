@@ -18,8 +18,8 @@ public class ManageCategoryPage {
 
 	@FindBy(xpath = "//p[contains(.,' Manage Category ')]/parent::*")
 	public WebElement manageCategoryButton;
-	
-	@FindBy(xpath = "//a[@data-toggle='dropdown']")
+
+	@FindBy(xpath = "//a[@data-toggle='dropdown']/parent::*")
 	public WebElement adminImageAndTextButton;
 
 	@FindBy(xpath = "//a[@class='dropdown-item'][2]")
@@ -62,7 +62,7 @@ public class ManageCategoryPage {
 
 	public void selectYesRadioButton() {
 		radioButtonYesInLeftMenu.click();
-		
+
 	}
 
 	public void selectGroup() {
@@ -88,11 +88,11 @@ public class ManageCategoryPage {
 
 	public void clickOnCategoryRadioButton() {
 		categoryRadioButton.click();
-	
+
 	}
 
 	public void doLogout() {
-
+		adminImageAndTextButton.click();
 		adminImageAndTextButton.click();
 		logoutButton.click();
 	}

@@ -6,9 +6,7 @@
       <class name="validationsOfManageCategoryPage.AddNewCategory">
         <methods>
           <include name="NavigateToAdminUserPage"/>
-          <include name="logoutFromApp"/>
           <include name="verifyNewCategoryAdding"/>
-          <include name="quitdriver"/>
           <include name="initializeDriver"/>
         </methods>
       </class> <!-- validationsOfManageCategoryPage.AddNewCategory -->

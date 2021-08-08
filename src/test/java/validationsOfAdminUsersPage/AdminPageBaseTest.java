@@ -25,12 +25,12 @@ public class AdminPageBaseTest {
 	@Parameters({ "browserName" })
 	public void initializeDriver(@Optional("chrome") String browser) {
 		driver = DriverFactory.driverInitialization(browser);
-		
+
 	}
 
 	@BeforeMethod(alwaysRun = true)
 	public void NavigateToAdminUserPage() {
-		
+
 		DriverFactory.loginToGroceryApp(driver);
 		AdminUsersPage adminUsersPage = new AdminUsersPage(driver);
 		adminUsersPage.clickOnAdminUsers();
@@ -44,8 +44,8 @@ public class AdminPageBaseTest {
 	@AfterClass(alwaysRun = true)
 	public void quitdriver() {
 		AdminUsersPage adminUsersPage = new AdminUsersPage(driver);
-	adminUsersPage.doLogout();
+		adminUsersPage.doLogout();
 
 		DriverFactory.quitDriver(driver);
-}
+	}
 }

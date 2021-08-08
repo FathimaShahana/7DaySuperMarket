@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="134.553" tests="15" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="240.278" tests="23" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\bin"/>
@@ -64,19 +64,39 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="verifyDashBoardPage" classname="validattionsOfLoginPAge.LoginPageTest" time="0.157"/>
-  <testcase name="verifyResetButton" classname="validationsOfAdminUsersPage.VerifyResetButton" time="1.601"/>
-  <testcase name="VerifyUsersButtonFunctionality" classname="validationsOfManageOrderPage.ListOrdersStatus" time="0"/>
-  <testcase name="verifynewUsers" classname="validationsOfAdminUsersPage.UserCanCreateDifferentUsers" time="2.722"/>
-  <testcase name="verifynewUsers" classname="validationsOfAdminUsersPage.UserCanCreateDifferentUsers" time="2.525"/>
-  <testcase name="verifynewUsers" classname="validationsOfAdminUsersPage.UserCanCreateDifferentUsers" time="2.668"/>
-  <testcase name="verifynewUsers" classname="validationsOfAdminUsersPage.UserCanCreateDifferentUsers" time="2.537"/>
-  <testcase name="verifynewUsers" classname="validationsOfAdminUsersPage.UserCanCreateDifferentUsers" time="2.461"/>
-  <testcase name="verifyDropDownstatusPaid" classname="validationsOfManageOrderPage.VerifySearchListOrders" time="1.594"/>
-  <testcase name="verifySearchofOrdersInList" classname="validationsOfManageOrderPage.VerifySearchListOrders" time="1.063"/>
-  <testcase name="verifyNewUserCreate" classname="validationsOfAdminUsersPage.CreateAndDeleteAUser" time="2.656"/>
-  <testcase name="verifyDeleteOfUser" classname="validationsOfAdminUsersPage.CreateAndDeleteAUser" time="1.276"/>
-  <testcase name="verifyImageUpload" classname="validationsOfMobileSliderPage.ImageUpload" time="3.278">
+  <testcase name="verifySearchButtonInAdminUsersPage" classname="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers" time="9.253"/>
+  <testcase name="verifySearchButtonInAdminUsersPage" classname="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers" time="4"/>
+  <testcase name="verifySearchButtonInAdminUsersPage" classname="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers" time="4.209"/>
+  <testcase name="verifySearchButtonInAdminUsersPage" classname="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers" time="4.497"/>
+  <testcase name="verifySearchButtonInAdminUsersPage" classname="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers" time="4.194"/>
+  <testcase name="verifySearchButtonInAdminUsersPage" classname="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers" time="4.235"/>
+  <testcase name="verifySearchButtonInAdminUsersPage" classname="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers" time="4.052"/>
+  <testcase name="verifySearchButtonInAdminUsersPage" classname="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers" time="4.103"/>
+  <testcase name="verifyResetButton" classname="validationsOfAdminUsersPage.VerifyResetButton" time="1.662"/>
+  <testcase name="verifyDashBoardPage" classname="validattionsOfLoginPage.LoginPageTest" time="0.129"/>
+  <testcase name="verifynewUsers" classname="validationsOfAdminUsersPage.UserCanCreateDifferentUsers" time="3.431"/>
+  <testcase name="verifynewUsers" classname="validationsOfAdminUsersPage.UserCanCreateDifferentUsers" time="3.028"/>
+  <testcase name="verifynewUsers" classname="validationsOfAdminUsersPage.UserCanCreateDifferentUsers" time="2.718"/>
+  <testcase name="verifynewUsers" classname="validationsOfAdminUsersPage.UserCanCreateDifferentUsers" time="2.849"/>
+  <testcase name="verifynewUsers" classname="validationsOfAdminUsersPage.UserCanCreateDifferentUsers" time="3.01"/>
+  <testcase name="verifyDropDownstatusPaid" classname="validationsOfManageOrderPage.VerifySearchListOrders" time="2.581"/>
+  <testcase name="verifySearchofOrdersInList" classname="validationsOfManageOrderPage.VerifySearchListOrders" time="1.318"/>
+  <testcase name="verifyNewCategoryAdding" classname="validationsOfManageCategoryPage.AddNewCategory" time="4.318">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at validationsOfManageCategoryPage.AddNewCategory.verifyNewCategoryAdding(AddNewCategory.java:22)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 13684
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1628441865.912][WARNING]: This version of ChromeDriver has not been tested with Chrome version 92.
+Aug 08, 2021 10:27:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyNewUserCreate" classname="validationsOfAdminUsersPage.CreateAndDeleteAUser" time="2.678"/>
+  <testcase name="verifyDeleteOfUser" classname="validationsOfAdminUsersPage.CreateAndDeleteAUser" time="1.678"/>
+  <testcase name="verifyImageUpload" classname="validationsOfMobileSliderPage.ImageUpload" time="3.123">
     <failure message="expected [ï¿½&#10;Alert!&#10;Mobile Slider Created Successfully] but found [�&#10;Alert!&#10;Mobile Slider Created Successfully]" type="java.lang.AssertionError">java.lang.AssertionError: 
 expected [ï¿½
 Alert!
@@ -85,15 +105,15 @@ Alert!
 Mobile Slider Created Successfully]
 	at validationsOfMobileSliderPage.ImageUpload.verifyImageUpload(ImageUpload.java:37)
 </failure>
-    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 26824
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 12367
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1628369593.946][WARNING]: This version of ChromeDriver has not been tested with Chrome version 92.
-Aug 08, 2021 2:23:14 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1628441901.315][WARNING]: This version of ChromeDriver has not been tested with Chrome version 92.
+Aug 08, 2021 10:28:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="isAdminImageDisplayed" classname="validationsOfDashBoardPage.DashBoardPageTest" time="0.135"/>
-  <testcase name="validateResetButton" classname="validationsOfManageOrderPage.verifyResetButton" time="2.688"/>
+  <testcase name="isAdminImageDisplayed" classname="validationsOfDashBoardPage.DashBoardPageTest" time="0.159"/>
+  <testcase name="validateResetButton" classname="validationsOfManageOrderPage.verifyResetButton" time="2.677"/>
 </testsuite>

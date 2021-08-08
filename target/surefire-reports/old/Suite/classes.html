@@ -54,12 +54,12 @@
 <tr>
 <td>&nbsp;</td>
 <td>verifyNewUserCreate</td>
-<td>Smoke </td>
+<td>Sanity Regression </td>
 </tr>
 <tr>
 <td>&nbsp;</td>
 <td>verifyDeleteOfUser</td>
-<td>Regression </td>
+<td>Sanity Regression </td>
 </tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
@@ -90,36 +90,6 @@
 <td>quitdriver</td>
 <td>&nbsp;</td></tr>
 <tr>
-<td>validattionsOfLoginPAge.LoginPageTest</td>
-<td>&nbsp;</td><td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@Test</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>verifyDashBoardPage</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@BeforeClass</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>initializeDriver</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@BeforeMethod</td>
-</tr>
-<tr>
-<td align='center' colspan='3'>@AfterMethod</td>
-</tr>
-<tr>
-<td align='center' colspan='3'>@AfterClass</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>quitdriver</td>
-<td>&nbsp;</td></tr>
-<tr>
 <td>validationsOfDashBoardPage.DashBoardPageTest</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
@@ -128,7 +98,7 @@
 <tr>
 <td>&nbsp;</td>
 <td>isAdminImageDisplayed</td>
-<td>Smoke </td>
+<td>Sanity </td>
 </tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
@@ -235,6 +205,82 @@
 <td>quitdriver</td>
 <td>&nbsp;</td></tr>
 <tr>
+<td>validationsOfManageCategoryPage.AddNewCategory</td>
+<td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@Test</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyNewCategoryAdding</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>initializeDriver</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeMethod</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>NavigateToAdminUserPage</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@AfterMethod</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>screenShot</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@AfterClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>quitdriver</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>validattionsOfLoginPage.LoginPageTest</td>
+<td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@Test</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyDashBoardPage</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>initializeDriver</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeMethod</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>NavigateToAdminUserPage</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@AfterMethod</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>screenShot</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@AfterClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>quitdriver</td>
+<td>&nbsp;</td></tr>
+<tr>
 <td>validationsOfAdminUsersPage.UserCanCreateDifferentUsers</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
@@ -273,16 +319,15 @@
 <td>quitdriver</td>
 <td>&nbsp;</td></tr>
 <tr>
-<td>validationsOfAdminUsersPage.VerifyResetButton</td>
+<td>validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@Test</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyResetButton</td>
-<td>Smoke </td>
-</tr>
+<td>verifySearchButtonInAdminUsersPage</td>
+<td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
@@ -312,15 +357,16 @@
 <td>quitdriver</td>
 <td>&nbsp;</td></tr>
 <tr>
-<td>validationsOfManageOrderPage.ListOrdersStatus</td>
+<td>validationsOfAdminUsersPage.VerifyResetButton</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@Test</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>VerifyUsersButtonFunctionality</td>
-<td>&nbsp;</td></tr>
+<td>verifyResetButton</td>
+<td>Regression </td>
+</tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>

@@ -23,6 +23,12 @@ public class LoginPage {
 	@FindBy(xpath = "//button[text()='Sign In']")
 	public WebElement signInButton;
 
+	@FindBy(xpath = "//a[@data-toggle='dropdown']")
+	public WebElement adminImageAndTextButton;
+
+	@FindBy(xpath = "//a[@class='dropdown-item'][2]")
+	public WebElement LogoutButton;
+
 	public void login(String userName, String password) {
 		enterUserName(userName);
 		enterPassWord(password);
@@ -39,5 +45,10 @@ public class LoginPage {
 
 	public void enterSignIn() {
 		signInButton.click();
+	}
+
+	public void doLogout() {
+		adminImageAndTextButton.click();
+		LogoutButton.click();
 	}
 }

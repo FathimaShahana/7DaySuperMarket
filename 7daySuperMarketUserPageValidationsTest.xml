@@ -3,10 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-   
-       <class name="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers"/>
-      <class name="validattionsOfLoginPAge.LoginPageTest"/>
+   <class name="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers"/>
       <class name="validationsOfAdminUsersPage.VerifyResetButton"/>
+      <class name="validattionsOfLoginPage.LoginPageTest"/>
       <class name="validationsOfAdminUsersPage.UserCanCreateDifferentUsers"/>
       <class name="validationsOfManageOrderPage.VerifySearchListOrders"/>
       <class name="validationsOfManageCategoryPage.AddNewCategory"/>

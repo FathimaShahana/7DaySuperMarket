@@ -1,8 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 15, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 134.553 sec <<< FAILURE! - in TestSuite
-verifyImageUpload(validationsOfMobileSliderPage.ImageUpload)  Time elapsed: 3.278 sec  <<< FAILURE!
+Tests run: 23, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 240.278 sec <<< FAILURE! - in TestSuite
+verifyNewCategoryAdding(validationsOfManageCategoryPage.AddNewCategory)  Time elapsed: 4.318 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at validationsOfManageCategoryPage.AddNewCategory.verifyNewCategoryAdding(AddNewCategory.java:22)
+
+verifyImageUpload(validationsOfMobileSliderPage.ImageUpload)  Time elapsed: 3.123 sec  <<< FAILURE!
 java.lang.AssertionError: 
 expected [�
 Alert!

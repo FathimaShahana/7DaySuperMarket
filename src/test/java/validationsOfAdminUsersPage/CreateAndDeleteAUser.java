@@ -10,11 +10,9 @@ import org.testng.annotations.Test;
 
 import pages7daySuperMarket.AdminUsersPage;
 
-
-
 public class CreateAndDeleteAUser extends AdminPageBaseTest {
 
-	@Test(priority = 0,groups= {"Sanity","Regression" })
+	@Test(priority = 0, groups = { "Sanity", "Regression" })
 	public void verifyNewUserCreate() {
 		AdminUsersPage adminUsersPage = new AdminUsersPage(driver);
 		adminUsersPage.clickOnNewUserButton();
@@ -27,7 +25,7 @@ public class CreateAndDeleteAUser extends AdminPageBaseTest {
 		Assert.assertEquals(actual, "Fathima123");
 	}
 
-	@Test(priority = 1,groups = {"Sanity","Regression" })
+	@Test(priority = 1, groups = { "Sanity", "Regression" })
 	public void verifyDeleteOfUser() {
 
 		AdminUsersPage adminUsersPage = new AdminUsersPage(driver);

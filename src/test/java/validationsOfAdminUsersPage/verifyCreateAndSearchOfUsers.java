@@ -34,6 +34,5 @@ public class verifyCreateAndSearchOfUsers extends AdminPageBaseTest {
 		Assert.assertEquals(actualUserCount, 1);
 
 	}
-	
 
 }

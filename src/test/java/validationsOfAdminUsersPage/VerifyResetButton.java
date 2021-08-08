@@ -8,10 +8,9 @@ import org.testng.annotations.Test;
 
 import pages7daySuperMarket.AdminUsersPage;
 
-
 public class VerifyResetButton extends AdminPageBaseTest {
 
-	@Test(groups= {"Regression"})
+	@Test(groups = { "Regression" })
 	public void verifyResetButton() {
 
 		AdminUsersPage adminUsersPage = new AdminUsersPage(driver);

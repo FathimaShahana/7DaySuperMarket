@@ -21,7 +21,7 @@ public class GetWaitMethod {
 
 		return driver;
 	}
-
+	
 	public static void waitForElementIn7DaySuperMarket(WebDriver driver, int seconds, WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, seconds);
 		wait.until(ExpectedConditions.visibilityOf(element));

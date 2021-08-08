@@ -83,14 +83,11 @@ public class ManageOrdersPage {
 	public void clickToSelectpaymentmodeDropDown() {
 		paymentMode.click();
 	}
-	
 
 	public int getsizeOfPaidOrderList() {
 		return tablePaidList.size();
 	}
 
-	
-	
 	public void clickToSelectStatusDropdown() {
 		statusDropDown.click();
 

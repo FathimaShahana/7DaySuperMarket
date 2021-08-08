@@ -30,14 +30,14 @@ public class VerifySearchListOrders extends ManageOrdersBaseTest {
 
 		manageOrderspage.clickToSelectpaymentmodeDropDown();
 		manageOrderspage.enterPaymentMode("COD");
-		
+
 		manageOrderspage.clickToSelectStatusDropdown();
 		manageOrderspage.enterstatus("Paid");
-		
+
 		manageOrderspage.clickOnSubmitSearch();
 
 		int actual = manageOrderspage.getsizeOfPaidOrderList();
-		Assert.assertEquals(actual, 5);
+		Assert.assertEquals(actual, 3);
 
 	}
 
