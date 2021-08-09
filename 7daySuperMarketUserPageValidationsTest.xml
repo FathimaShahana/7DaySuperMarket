@@ -3,12 +3,16 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="usersPageValidations.UserCanCreateDifferentUsers"/>
-      <class name="usersPageValidations.verifySearchOfUsers"/>
-      <class name="usersPageValidations.VerifyResetButton"/>
-    
-      <class name="manageOrderPageValidations.verifyResetButton"/>
-      <class name="manageOrderPageValidations.VerifySearchListOrders"/>
+   <class name="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers"/>
+      <class name="validationsOfAdminUsersPage.VerifyResetButton"/>
+      <class name="validattionsOfLoginPage.LoginPageTest"/>
+      <class name="validationsOfAdminUsersPage.UserCanCreateDifferentUsers"/>
+      <class name="validationsOfManageOrderPage.VerifySearchListOrders"/>
+      <class name="validationsOfManageCategoryPage.AddNewCategory"/>
+      <class name="validationsOfAdminUsersPage.CreateAndDeleteAUser"/>
+      <class name="validationsOfMobileSliderPage.ImageUpload"/>
+      <class name="validationsOfDashBoardPage.DashBoardPageTest"/>
+      <class name="validationsOfManageOrderPage.verifyResetButton"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

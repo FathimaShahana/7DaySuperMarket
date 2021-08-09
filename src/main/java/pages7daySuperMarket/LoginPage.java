@@ -15,31 +15,40 @@ public class LoginPage {
 	}
 
 	@FindBy(xpath = "//input[@name='username']")
-	public WebElement UserNameInputField;
-	
-	@FindBy(xpath="//input[@name='password']")
-	public WebElement PasswordInputField;
-	
-	@FindBy(xpath="//button[text()='Sign In']")
-	public WebElement SignInButton;
-	
+	public WebElement userNameInputField;
+
+	@FindBy(xpath = "//input[@name='password']")
+	public WebElement passwordInputField;
+
+	@FindBy(xpath = "//button[text()='Sign In']")
+	public WebElement signInButton;
+
+	@FindBy(xpath = "//a[@data-toggle='dropdown']")
+	public WebElement adminImageAndTextButton;
+
+	@FindBy(xpath = "//a[@class='dropdown-item'][2]")
+	public WebElement LogoutButton;
+
 	public void login(String userName, String password) {
-		enterUserName(userName);//
+		enterUserName(userName);
 		enterPassWord(password);
 		enterSignIn();
 	}
-	
+
 	public void enterUserName(String userName) {
-		UserNameInputField.sendKeys(userName);
+		userNameInputField.sendKeys(userName);
 	}
-	
-	public void enterPassWord(String password)
-	{
-		PasswordInputField.sendKeys(password);
+
+	public void enterPassWord(String password) {
+		passwordInputField.sendKeys(password);
 	}
-	
-	public void enterSignIn()
-	{
-		SignInButton.click();
+
+	public void enterSignIn() {
+		signInButton.click();
+	}
+
+	public void doLogout() {
+		adminImageAndTextButton.click();
+		LogoutButton.click();
 	}
 }

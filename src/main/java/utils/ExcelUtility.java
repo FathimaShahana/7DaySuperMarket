@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -33,16 +34,16 @@ public class ExcelUtility {
 				cell = row.getCell(j); 
 
 				switch (cell.getCellType()) {
-					case Cell.CELL_TYPE_NUMERIC:
+					case NUMERIC:
 						dataObj[i][j] = (int) cell.getNumericCellValue();
 						break;
-					case Cell.CELL_TYPE_STRING:
+					case STRING:
 						dataObj[i][j] = cell.getStringCellValue();
 						break;
-					case Cell.CELL_TYPE_BOOLEAN:
+					case BOOLEAN:
 						dataObj[i][j] = cell.getBooleanCellValue();
 						break;
-					case Cell.CELL_TYPE_BLANK:
+					case BLANK:
 						dataObj[i][j] = "";
 						break;
 					default:
@@ -56,3 +57,12 @@ public class ExcelUtility {
 	}
 
 }
+
+
+
+
+
+
+
+
+

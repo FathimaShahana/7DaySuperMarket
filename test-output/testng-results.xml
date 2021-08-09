@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="65844" started-at="2021-08-08T16:49:27Z" finished-at="2021-08-08T16:50:33Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="65844" started-at="2021-08-08T16:49:27Z" finished-at="2021-08-08T16:50:33Z">
+      <class name="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers">
+        <test-method status="PASS" signature="initializeDriver(java.lang.String)[pri:0, instance:validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers@548e7350]" name="initializeDriver" is-config="true" duration-ms="4585" started-at="2021-08-08T16:49:27Z" finished-at="2021-08-08T16:49:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method status="PASS" signature="NavigateToAdminUserPage()[pri:0, instance:validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers@548e7350]" name="NavigateToAdminUserPage" is-config="true" duration-ms="5759" started-at="2021-08-08T16:49:33Z" finished-at="2021-08-08T16:49:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateToAdminUserPage -->
+        <test-method status="PASS" signature="verifySearchButtonInAdminUsersPage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers@548e7350]" name="verifySearchButtonInAdminUsersPage" duration-ms="3981" started-at="2021-08-08T16:49:39Z" data-provider="excelread" finished-at="2021-08-08T16:49:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Fathima A]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a12479]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchButtonInAdminUsersPage -->
+        <test-method status="PASS" signature="NavigateToAdminUserPage()[pri:0, instance:validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers@548e7350]" name="NavigateToAdminUserPage" is-config="true" duration-ms="3116" started-at="2021-08-08T16:49:43Z" finished-at="2021-08-08T16:49:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateToAdminUserPage -->
+        <test-method status="PASS" signature="verifySearchButtonInAdminUsersPage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers@548e7350]" name="verifySearchButtonInAdminUsersPage" duration-ms="3752" started-at="2021-08-08T16:49:46Z" data-provider="excelread" finished-at="2021-08-08T16:49:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Fathima B]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a46809]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Staff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchButtonInAdminUsersPage -->
+        <test-method status="PASS" signature="NavigateToAdminUserPage()[pri:0, instance:validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers@548e7350]" name="NavigateToAdminUserPage" is-config="true" duration-ms="3139" started-at="2021-08-08T16:49:50Z" finished-at="2021-08-08T16:49:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateToAdminUserPage -->
+        <test-method status="PASS" signature="verifySearchButtonInAdminUsersPage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers@548e7350]" name="verifySearchButtonInAdminUsersPage" duration-ms="4086" started-at="2021-08-08T16:49:53Z" data-provider="excelread" finished-at="2021-08-08T16:49:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Fathima C]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a24680]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Staff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchButtonInAdminUsersPage -->
+        <test-method status="PASS" signature="NavigateToAdminUserPage()[pri:0, instance:validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers@548e7350]" name="NavigateToAdminUserPage" is-config="true" duration-ms="3018" started-at="2021-08-08T16:49:57Z" finished-at="2021-08-08T16:50:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateToAdminUserPage -->
+        <test-method status="PASS" signature="verifySearchButtonInAdminUsersPage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers@548e7350]" name="verifySearchButtonInAdminUsersPage" duration-ms="3775" started-at="2021-08-08T16:50:00Z" data-provider="excelread" finished-at="2021-08-08T16:50:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Fathima D]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a13579]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchButtonInAdminUsersPage -->
+        <test-method status="PASS" signature="NavigateToAdminUserPage()[pri:0, instance:validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers@548e7350]" name="NavigateToAdminUserPage" is-config="true" duration-ms="3106" started-at="2021-08-08T16:50:04Z" finished-at="2021-08-08T16:50:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateToAdminUserPage -->
+        <test-method status="PASS" signature="verifySearchButtonInAdminUsersPage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers@548e7350]" name="verifySearchButtonInAdminUsersPage" duration-ms="3775" started-at="2021-08-08T16:50:07Z" data-provider="excelread" finished-at="2021-08-08T16:50:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Fathima E]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a86420]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Staff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchButtonInAdminUsersPage -->
+        <test-method status="PASS" signature="NavigateToAdminUserPage()[pri:0, instance:validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers@548e7350]" name="NavigateToAdminUserPage" is-config="true" duration-ms="3074" started-at="2021-08-08T16:50:11Z" finished-at="2021-08-08T16:50:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateToAdminUserPage -->
+        <test-method status="PASS" signature="verifySearchButtonInAdminUsersPage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers@548e7350]" name="verifySearchButtonInAdminUsersPage" duration-ms="4182" started-at="2021-08-08T16:50:14Z" data-provider="excelread" finished-at="2021-08-08T16:50:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Fathima F]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a53791]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchButtonInAdminUsersPage -->
+        <test-method status="PASS" signature="NavigateToAdminUserPage()[pri:0, instance:validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers@548e7350]" name="NavigateToAdminUserPage" is-config="true" duration-ms="3087" started-at="2021-08-08T16:50:18Z" finished-at="2021-08-08T16:50:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateToAdminUserPage -->
+        <test-method status="PASS" signature="verifySearchButtonInAdminUsersPage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers@548e7350]" name="verifySearchButtonInAdminUsersPage" duration-ms="4300" started-at="2021-08-08T16:50:21Z" data-provider="excelread" finished-at="2021-08-08T16:50:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Fathima AB]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a68429]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchButtonInAdminUsersPage -->
+        <test-method status="PASS" signature="NavigateToAdminUserPage()[pri:0, instance:validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers@548e7350]" name="NavigateToAdminUserPage" is-config="true" duration-ms="3080" started-at="2021-08-08T16:50:25Z" finished-at="2021-08-08T16:50:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateToAdminUserPage -->
+        <test-method status="PASS" signature="verifySearchButtonInAdminUsersPage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers@548e7350]" name="verifySearchButtonInAdminUsersPage" duration-ms="4397" started-at="2021-08-08T16:50:29Z" data-provider="excelread" finished-at="2021-08-08T16:50:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Fathima BC]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a12390]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Staff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchButtonInAdminUsersPage -->
+      </class> <!-- validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

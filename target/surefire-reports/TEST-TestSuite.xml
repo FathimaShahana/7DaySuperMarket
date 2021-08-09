@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="240.278" tests="23" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\bin"/>
+    <property name="java.vm.version" value="25.281-b09"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\ANVER\eclipse-workspace\project7rMart\7DaySuperMarket"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\ANVER\eclipse-workspace\project7rMart\7DaySuperMarket"/>
+    <property name="java.runtime.version" value="1.8.0_281-b09"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\ANVER\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.8.1\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_281\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_281\bin;C:\Program Files\apache-maven-3.8.1\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_281\bin;."/>
+    <property name="maven.conf" value="C:\Program Files\apache-maven-3.8.1\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="library.jansi.path" value="C:\Program Files\apache-maven-3.8.1\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\ANVER"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="ANVER"/>
+    <property name="java.class.path" value="C:\Program Files\apache-maven-3.8.1\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_281\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_281"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_281\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\apache-maven-3.8.1\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="verifySearchButtonInAdminUsersPage" classname="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers" time="9.253"/>
+  <testcase name="verifySearchButtonInAdminUsersPage" classname="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers" time="4"/>
+  <testcase name="verifySearchButtonInAdminUsersPage" classname="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers" time="4.209"/>
+  <testcase name="verifySearchButtonInAdminUsersPage" classname="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers" time="4.497"/>
+  <testcase name="verifySearchButtonInAdminUsersPage" classname="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers" time="4.194"/>
+  <testcase name="verifySearchButtonInAdminUsersPage" classname="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers" time="4.235"/>
+  <testcase name="verifySearchButtonInAdminUsersPage" classname="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers" time="4.052"/>
+  <testcase name="verifySearchButtonInAdminUsersPage" classname="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers" time="4.103"/>
+  <testcase name="verifyResetButton" classname="validationsOfAdminUsersPage.VerifyResetButton" time="1.662"/>
+  <testcase name="verifyDashBoardPage" classname="validattionsOfLoginPage.LoginPageTest" time="0.129"/>
+  <testcase name="verifynewUsers" classname="validationsOfAdminUsersPage.UserCanCreateDifferentUsers" time="3.431"/>
+  <testcase name="verifynewUsers" classname="validationsOfAdminUsersPage.UserCanCreateDifferentUsers" time="3.028"/>
+  <testcase name="verifynewUsers" classname="validationsOfAdminUsersPage.UserCanCreateDifferentUsers" time="2.718"/>
+  <testcase name="verifynewUsers" classname="validationsOfAdminUsersPage.UserCanCreateDifferentUsers" time="2.849"/>
+  <testcase name="verifynewUsers" classname="validationsOfAdminUsersPage.UserCanCreateDifferentUsers" time="3.01"/>
+  <testcase name="verifyDropDownstatusPaid" classname="validationsOfManageOrderPage.VerifySearchListOrders" time="2.581"/>
+  <testcase name="verifySearchofOrdersInList" classname="validationsOfManageOrderPage.VerifySearchListOrders" time="1.318"/>
+  <testcase name="verifyNewCategoryAdding" classname="validationsOfManageCategoryPage.AddNewCategory" time="4.318">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at validationsOfManageCategoryPage.AddNewCategory.verifyNewCategoryAdding(AddNewCategory.java:22)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 13684
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1628441865.912][WARNING]: This version of ChromeDriver has not been tested with Chrome version 92.
+Aug 08, 2021 10:27:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyNewUserCreate" classname="validationsOfAdminUsersPage.CreateAndDeleteAUser" time="2.678"/>
+  <testcase name="verifyDeleteOfUser" classname="validationsOfAdminUsersPage.CreateAndDeleteAUser" time="1.678"/>
+  <testcase name="verifyImageUpload" classname="validationsOfMobileSliderPage.ImageUpload" time="3.123">
+    <failure message="expected [ï¿½&#10;Alert!&#10;Mobile Slider Created Successfully] but found [�&#10;Alert!&#10;Mobile Slider Created Successfully]" type="java.lang.AssertionError">java.lang.AssertionError: 
+expected [ï¿½
+Alert!
+Mobile Slider Created Successfully] but found [�
+Alert!
+Mobile Slider Created Successfully]
+	at validationsOfMobileSliderPage.ImageUpload.verifyImageUpload(ImageUpload.java:37)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 12367
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1628441901.315][WARNING]: This version of ChromeDriver has not been tested with Chrome version 92.
+Aug 08, 2021 10:28:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="isAdminImageDisplayed" classname="validationsOfDashBoardPage.DashBoardPageTest" time="0.159"/>
+  <testcase name="validateResetButton" classname="validationsOfManageOrderPage.verifyResetButton" time="2.677"/>
+</testsuite>

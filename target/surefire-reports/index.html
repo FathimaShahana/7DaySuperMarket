@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Users\ANVER\eclipse-workspace\project7rMart\7DaySuperMarket\7daySuperMarketUserPageValidationsTest.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">23 methods, 2 failed,   21 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="validationsOfMobileSliderPage.ImageUpload" hash-for-method="verifyImageUpload">verifyImageUpload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="validationsOfManageCategoryPage.AddNewCategory" hash-for-method="verifyNewCategoryAdding">verifyNewCategoryAdding</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="validationsOfDashBoardPage.DashBoardPageTest" hash-for-method="isAdminImageDisplayed">isAdminImageDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="validationsOfManageOrderPage.verifyResetButton" hash-for-method="validateResetButton">validateResetButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="validattionsOfLoginPage.LoginPageTest" hash-for-method="verifyDashBoardPage">verifyDashBoardPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="validationsOfAdminUsersPage.CreateAndDeleteAUser" hash-for-method="verifyDeleteOfUser">verifyDeleteOfUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="validationsOfManageOrderPage.VerifySearchListOrders" hash-for-method="verifyDropDownstatusPaid">verifyDropDownstatusPaid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="validationsOfAdminUsersPage.CreateAndDeleteAUser" hash-for-method="verifyNewUserCreate">verifyNewUserCreate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="validationsOfAdminUsersPage.VerifyResetButton" hash-for-method="verifyResetButton">verifyResetButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers" hash-for-method="verifySearchButtonInAdminUsersPage(Fathima B, a46809, Staff)">verifySearchButtonInAdminUsersPage(Fathima B, a46809, Staff)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers" hash-for-method="verifySearchButtonInAdminUsersPage(Fathima D, a13579, Admin)">verifySearchButtonInAdminUsersPage(Fathima D, a13579, Admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers" hash-for-method="verifySearchButtonInAdminUsersPage(Fathima AB, a68429, Admin)">verifySearchButtonInAdminUsersPage(Fathima AB, a68429, Admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers" hash-for-method="verifySearchButtonInAdminUsersPage(Fathima A, a12479, Admin)">verifySearchButtonInAdminUsersPage(Fathima A, a12479, Admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers" hash-for-method="verifySearchButtonInAdminUsersPage(Fathima BC, a12390, Staff)">verifySearchButtonInAdminUsersPage(Fathima BC, a12390, Staff)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers" hash-for-method="verifySearchButtonInAdminUsersPage(Fathima C, a24680, Staff)">verifySearchButtonInAdminUsersPage(Fathima C, a24680, Staff)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers" hash-for-method="verifySearchButtonInAdminUsersPage(Fathima E, a86420, Staff)">verifySearchButtonInAdminUsersPage(Fathima E, a86420, Staff)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers" hash-for-method="verifySearchButtonInAdminUsersPage(Fathima F, a53791, Admin)">verifySearchButtonInAdminUsersPage(Fathima F, a53791, Admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="validationsOfManageOrderPage.VerifySearchListOrders" hash-for-method="verifySearchofOrdersInList">verifySearchofOrdersInList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="validationsOfAdminUsersPage.UserCanCreateDifferentUsers" hash-for-method="verifynewUsers(fathima_2291326, 678905, Staff)">verifynewUsers(fathima_2291326, 678905, Staff)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="validationsOfAdminUsersPage.UserCanCreateDifferentUsers" hash-for-method="verifynewUsers(fathima_1846520, 987654, Admin)">verifynewUsers(fathima_1846520, 987654, Admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="validationsOfAdminUsersPage.UserCanCreateDifferentUsers" hash-for-method="verifynewUsers(fathima_7737778, 654321, Partner)">verifynewUsers(fathima_7737778, 654321, Partner)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="validationsOfAdminUsersPage.UserCanCreateDifferentUsers" hash-for-method="verifynewUsers(fathima_9722084, 123456, Admin)">verifynewUsers(fathima_9722084, 123456, Admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="validationsOfAdminUsersPage.UserCanCreateDifferentUsers" hash-for-method="verifynewUsers(fathima_2027429, 456789, Delivery Boy)">verifynewUsers(fathima_2027429, 456789, Delivery Boy)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">validationsOfManageCategoryPage.AddNewCategory</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNewCategoryAdding">
+                  </a> <!-- verifyNewCategoryAdding -->
+                  <span class="method-name">verifyNewCategoryAdding</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at validationsOfManageCategoryPage.AddNewCategory.verifyNewCategoryAdding(AddNewCategory.java:22)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">validationsOfMobileSliderPage.ImageUpload</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyImageUpload">
+                  </a> <!-- verifyImageUpload -->
+                  <span class="method-name">verifyImageUpload</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [ï¿½
+Alert!
+Mobile Slider Created Successfully] but found [�
+Alert!
+Mobile Slider Created Successfully]
+	at validationsOfMobileSliderPage.ImageUpload.verifyImageUpload(ImageUpload.java:37)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">validattionsOfLoginPage.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDashBoardPage">
+                  </a> <!-- verifyDashBoardPage -->
+                  <span class="method-name">verifyDashBoardPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchButtonInAdminUsersPage(Fathima B, a46809, Staff)">
+                  </a> <!-- verifySearchButtonInAdminUsersPage(Fathima B, a46809, Staff) -->
+                  <span class="method-name">verifySearchButtonInAdminUsersPage</span>
+                  <span class="parameters">(Fathima B, a46809, Staff)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchButtonInAdminUsersPage(Fathima D, a13579, Admin)">
+                  </a> <!-- verifySearchButtonInAdminUsersPage(Fathima D, a13579, Admin) -->
+                  <span class="method-name">verifySearchButtonInAdminUsersPage</span>
+                  <span class="parameters">(Fathima D, a13579, Admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchButtonInAdminUsersPage(Fathima AB, a68429, Admin)">
+                  </a> <!-- verifySearchButtonInAdminUsersPage(Fathima AB, a68429, Admin) -->
+                  <span class="method-name">verifySearchButtonInAdminUsersPage</span>
+                  <span class="parameters">(Fathima AB, a68429, Admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchButtonInAdminUsersPage(Fathima A, a12479, Admin)">
+                  </a> <!-- verifySearchButtonInAdminUsersPage(Fathima A, a12479, Admin) -->
+                  <span class="method-name">verifySearchButtonInAdminUsersPage</span>
+                  <span class="parameters">(Fathima A, a12479, Admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchButtonInAdminUsersPage(Fathima BC, a12390, Staff)">
+                  </a> <!-- verifySearchButtonInAdminUsersPage(Fathima BC, a12390, Staff) -->
+                  <span class="method-name">verifySearchButtonInAdminUsersPage</span>
+                  <span class="parameters">(Fathima BC, a12390, Staff)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchButtonInAdminUsersPage(Fathima C, a24680, Staff)">
+                  </a> <!-- verifySearchButtonInAdminUsersPage(Fathima C, a24680, Staff) -->
+                  <span class="method-name">verifySearchButtonInAdminUsersPage</span>
+                  <span class="parameters">(Fathima C, a24680, Staff)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchButtonInAdminUsersPage(Fathima E, a86420, Staff)">
+                  </a> <!-- verifySearchButtonInAdminUsersPage(Fathima E, a86420, Staff) -->
+                  <span class="method-name">verifySearchButtonInAdminUsersPage</span>
+                  <span class="parameters">(Fathima E, a86420, Staff)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchButtonInAdminUsersPage(Fathima F, a53791, Admin)">
+                  </a> <!-- verifySearchButtonInAdminUsersPage(Fathima F, a53791, Admin) -->
+                  <span class="method-name">verifySearchButtonInAdminUsersPage</span>
+                  <span class="parameters">(Fathima F, a53791, Admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">validationsOfManageOrderPage.verifyResetButton</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateResetButton">
+                  </a> <!-- validateResetButton -->
+                  <span class="method-name">validateResetButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">validationsOfAdminUsersPage.CreateAndDeleteAUser</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDeleteOfUser">
+                  </a> <!-- verifyDeleteOfUser -->
+                  <span class="method-name">verifyDeleteOfUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNewUserCreate">
+                  </a> <!-- verifyNewUserCreate -->
+                  <span class="method-name">verifyNewUserCreate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">validationsOfDashBoardPage.DashBoardPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="isAdminImageDisplayed">
+                  </a> <!-- isAdminImageDisplayed -->
+                  <span class="method-name">isAdminImageDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">validationsOfAdminUsersPage.UserCanCreateDifferentUsers</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifynewUsers(fathima_2291326, 678905, Staff)">
+                  </a> <!-- verifynewUsers(fathima_2291326, 678905, Staff) -->
+                  <span class="method-name">verifynewUsers</span>
+                  <span class="parameters">(fathima_2291326, 678905, Staff)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifynewUsers(fathima_1846520, 987654, Admin)">
+                  </a> <!-- verifynewUsers(fathima_1846520, 987654, Admin) -->
+                  <span class="method-name">verifynewUsers</span>
+                  <span class="parameters">(fathima_1846520, 987654, Admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifynewUsers(fathima_7737778, 654321, Partner)">
+                  </a> <!-- verifynewUsers(fathima_7737778, 654321, Partner) -->
+                  <span class="method-name">verifynewUsers</span>
+                  <span class="parameters">(fathima_7737778, 654321, Partner)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifynewUsers(fathima_9722084, 123456, Admin)">
+                  </a> <!-- verifynewUsers(fathima_9722084, 123456, Admin) -->
+                  <span class="method-name">verifynewUsers</span>
+                  <span class="parameters">(fathima_9722084, 123456, Admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifynewUsers(fathima_2027429, 456789, Delivery Boy)">
+                  </a> <!-- verifynewUsers(fathima_2027429, 456789, Delivery Boy) -->
+                  <span class="method-name">verifynewUsers</span>
+                  <span class="parameters">(fathima_2027429, 456789, Delivery Boy)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">validationsOfAdminUsersPage.VerifyResetButton</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyResetButton">
+                  </a> <!-- verifyResetButton -->
+                  <span class="method-name">verifyResetButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">validationsOfManageOrderPage.VerifySearchListOrders</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDropDownstatusPaid">
+                  </a> <!-- verifyDropDownstatusPaid -->
+                  <span class="method-name">verifyDropDownstatusPaid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchofOrdersInList">
+                  </a> <!-- verifySearchofOrdersInList -->
+                  <span class="method-name">verifySearchofOrdersInList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\ANVER\eclipse-workspace\project7rMart\7DaySuperMarket\7daySuperMarketUserPageValidationsTest.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers&quot;/&gt;
+      &lt;class name=&quot;validationsOfAdminUsersPage.VerifyResetButton&quot;/&gt;
+      &lt;class name=&quot;validattionsOfLoginPage.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;validationsOfAdminUsersPage.UserCanCreateDifferentUsers&quot;/&gt;
+      &lt;class name=&quot;validationsOfManageOrderPage.VerifySearchListOrders&quot;/&gt;
+      &lt;class name=&quot;validationsOfManageCategoryPage.AddNewCategory&quot;/&gt;
+      &lt;class name=&quot;validationsOfAdminUsersPage.CreateAndDeleteAUser&quot;/&gt;
+      &lt;class name=&quot;validationsOfMobileSliderPage.ImageUpload&quot;/&gt;
+      &lt;class name=&quot;validationsOfDashBoardPage.DashBoardPageTest&quot;/&gt;
+      &lt;class name=&quot;validationsOfManageOrderPage.verifyResetButton&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (10 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyDeleteOfUser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyNewUserCreate</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyResetButton</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">isAdminImageDisplayed</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyDeleteOfUser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyNewUserCreate</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(23);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifySearchButtonInAdminUsersPage')
+data.setCell(0, 2, 'validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers')
+data.setCell(0, 3, 9252);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifySearchButtonInAdminUsersPage')
+data.setCell(1, 2, 'validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers')
+data.setCell(1, 3, 4497);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyNewCategoryAdding')
+data.setCell(2, 2, 'validationsOfManageCategoryPage.AddNewCategory')
+data.setCell(2, 3, 4251);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifySearchButtonInAdminUsersPage')
+data.setCell(3, 2, 'validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers')
+data.setCell(3, 3, 4239);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifySearchButtonInAdminUsersPage')
+data.setCell(4, 2, 'validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers')
+data.setCell(4, 3, 4223);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifySearchButtonInAdminUsersPage')
+data.setCell(5, 2, 'validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers')
+data.setCell(5, 3, 4205);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifySearchButtonInAdminUsersPage')
+data.setCell(6, 2, 'validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers')
+data.setCell(6, 3, 4103);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifySearchButtonInAdminUsersPage')
+data.setCell(7, 2, 'validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers')
+data.setCell(7, 3, 4053);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifySearchButtonInAdminUsersPage')
+data.setCell(8, 2, 'validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers')
+data.setCell(8, 3, 4008);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifynewUsers')
+data.setCell(9, 2, 'validationsOfAdminUsersPage.UserCanCreateDifferentUsers')
+data.setCell(9, 3, 3431);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyImageUpload')
+data.setCell(10, 2, 'validationsOfMobileSliderPage.ImageUpload')
+data.setCell(10, 3, 3124);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifynewUsers')
+data.setCell(11, 2, 'validationsOfAdminUsersPage.UserCanCreateDifferentUsers')
+data.setCell(11, 3, 3031);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifynewUsers')
+data.setCell(12, 2, 'validationsOfAdminUsersPage.UserCanCreateDifferentUsers')
+data.setCell(12, 3, 3016);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifynewUsers')
+data.setCell(13, 2, 'validationsOfAdminUsersPage.UserCanCreateDifferentUsers')
+data.setCell(13, 3, 2848);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifynewUsers')
+data.setCell(14, 2, 'validationsOfAdminUsersPage.UserCanCreateDifferentUsers')
+data.setCell(14, 3, 2718);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyNewUserCreate')
+data.setCell(15, 2, 'validationsOfAdminUsersPage.CreateAndDeleteAUser')
+data.setCell(15, 3, 2679);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'validateResetButton')
+data.setCell(16, 2, 'validationsOfManageOrderPage.verifyResetButton')
+data.setCell(16, 3, 2677);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyDropDownstatusPaid')
+data.setCell(17, 2, 'validationsOfManageOrderPage.VerifySearchListOrders')
+data.setCell(17, 3, 2582);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyDeleteOfUser')
+data.setCell(18, 2, 'validationsOfAdminUsersPage.CreateAndDeleteAUser')
+data.setCell(18, 3, 1678);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyResetButton')
+data.setCell(19, 2, 'validationsOfAdminUsersPage.VerifyResetButton')
+data.setCell(19, 3, 1662);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifySearchofOrdersInList')
+data.setCell(20, 2, 'validationsOfManageOrderPage.VerifySearchListOrders')
+data.setCell(20, 3, 1318);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'isAdminImageDisplayed')
+data.setCell(21, 2, 'validationsOfDashBoardPage.DashBoardPageTest')
+data.setCell(21, 3, 159);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifyDashBoardPage')
+data.setCell(22, 2, 'validattionsOfLoginPage.LoginPageTest')
+data.setCell(22, 3, 129);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">validationsOfAdminUsersPage.verifyCreateAndSearchOfUsers</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initializeDriver(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToAdminUserPage</span>
+                <span class="method-start">13187 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchButtonInAdminUsersPage(Fathima A, a12479, Admin)</span>
+                <span class="method-start">20755 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=verifySearchButtonInAdminUsersPage status=SUCCESS method=verifyCreateAndSearchOfUse...)</span>
+                <span class="method-start">30017 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToAdminUserPage</span>
+                <span class="method-start">30020 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchButtonInAdminUsersPage(Fathima B, a46809, Staff)</span>
+                <span class="method-start">33065 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=verifySearchButtonInAdminUsersPage status=SUCCESS method=verifyCreateAndSearchOfUse...)</span>
+                <span class="method-start">37073 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToAdminUserPage</span>
+                <span class="method-start">37075 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchButtonInAdminUsersPage(Fathima C, a24680, Staff)</span>
+                <span class="method-start">40038 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=verifySearchButtonInAdminUsersPage status=SUCCESS method=verifyCreateAndSearchOfUse...)</span>
+                <span class="method-start">44261 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToAdminUserPage</span>
+                <span class="method-start">44262 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchButtonInAdminUsersPage(Fathima D, a13579, Admin)</span>
+                <span class="method-start">47389 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=verifySearchButtonInAdminUsersPage status=SUCCESS method=verifyCreateAndSearchOfUse...)</span>
+                <span class="method-start">51886 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToAdminUserPage</span>
+                <span class="method-start">51888 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchButtonInAdminUsersPage(Fathima E, a86420, Staff)</span>
+                <span class="method-start">54940 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=verifySearchButtonInAdminUsersPage status=SUCCESS method=verifyCreateAndSearchOfUse...)</span>
+                <span class="method-start">59145 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToAdminUserPage</span>
+                <span class="method-start">59146 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchButtonInAdminUsersPage(Fathima F, a53791, Admin)</span>
+                <span class="method-start">62419 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=verifySearchButtonInAdminUsersPage status=SUCCESS method=verifyCreateAndSearchOfUse...)</span>
+                <span class="method-start">66659 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToAdminUserPage</span>
+                <span class="method-start">66660 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchButtonInAdminUsersPage(Fathima AB, a68429, Admin)</span>
+                <span class="method-start">69938 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=verifySearchButtonInAdminUsersPage status=SUCCESS method=verifyCreateAndSearchOfUse...)</span>
+                <span class="method-start">73991 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToAdminUserPage</span>
+                <span class="method-start">73992 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchButtonInAdminUsersPage(Fathima BC, a12390, Staff)</span>
+                <span class="method-start">77239 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=verifySearchButtonInAdminUsersPage status=SUCCESS method=verifyCreateAndSearchOfUse...)</span>
+                <span class="method-start">81343 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">quitdriver</span>
+                <span class="method-start">81346 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">validationsOfAdminUsersPage.VerifyResetButton</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initializeDriver(chrome)</span>
+                <span class="method-start">83405 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToAdminUserPage</span>
+                <span class="method-start">88319 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyResetButton</span>
+                <span class="method-start">94089 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=verifyResetButton status=SUCCESS method=VerifyResetButton.verifyResetButton()[pri:0...)</span>
+                <span class="method-start">95751 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">quitdriver</span>
+                <span class="method-start">95752 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">validattionsOfLoginPage.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initializeDriver(chrome)</span>
+                <span class="method-start">97595 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToAdminUserPage</span>
+                <span class="method-start">99755 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDashBoardPage</span>
+                <span class="method-start">104673 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=verifyDashBoardPage status=SUCCESS method=LoginPageTest.verifyDashBoardPage()[pri:0...)</span>
+                <span class="method-start">104803 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">quitdriver</span>
+                <span class="method-start">104804 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">validationsOfAdminUsersPage.UserCanCreateDifferentUsers</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initializeDriver(chrome)</span>
+                <span class="method-start">106579 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToAdminUserPage</span>
+                <span class="method-start">108923 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifynewUsers(fathima_9722084, 123456, Admin)</span>
+                <span class="method-start">115288 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=verifynewUsers status=SUCCESS method=UserCanCreateDifferentUsers.verifynewUsers(jav...)</span>
+                <span class="method-start">118719 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToAdminUserPage</span>
+                <span class="method-start">118720 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifynewUsers(fathima_7737778, 654321, Partner)</span>
+                <span class="method-start">121737 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=verifynewUsers status=SUCCESS method=UserCanCreateDifferentUsers.verifynewUsers(jav...)</span>
+                <span class="method-start">124768 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToAdminUserPage</span>
+                <span class="method-start">124770 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifynewUsers(fathima_2291326, 678905, Staff)</span>
+                <span class="method-start">127744 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=verifynewUsers status=SUCCESS method=UserCanCreateDifferentUsers.verifynewUsers(jav...)</span>
+                <span class="method-start">130463 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToAdminUserPage</span>
+                <span class="method-start">130464 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifynewUsers(fathima_1846520, 987654, Admin)</span>
+                <span class="method-start">133605 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=verifynewUsers status=SUCCESS method=UserCanCreateDifferentUsers.verifynewUsers(jav...)</span>
+                <span class="method-start">136454 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToAdminUserPage</span>
+                <span class="method-start">136455 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifynewUsers(fathima_2027429, 456789, Delivery Boy)</span>
+                <span class="method-start">139541 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=verifynewUsers status=SUCCESS method=UserCanCreateDifferentUsers.verifynewUsers(jav...)</span>
+                <span class="method-start">142557 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">quitdriver</span>
+                <span class="method-start">142558 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">validationsOfManageOrderPage.VerifySearchListOrders</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initializeDriver(chrome)</span>
+                <span class="method-start">144549 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToAdminUserPage</span>
+                <span class="method-start">147027 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDropDownstatusPaid</span>
+                <span class="method-start">156226 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=verifyDropDownstatusPaid status=SUCCESS method=VerifySearchListOrders.verifyDropDow...)</span>
+                <span class="method-start">158808 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToAdminUserPage</span>
+                <span class="method-start">158810 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchofOrdersInList</span>
+                <span class="method-start">162133 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=verifySearchofOrdersInList status=SUCCESS method=VerifySearchListOrders.verifySearc...)</span>
+                <span class="method-start">163451 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">quitdriver</span>
+                <span class="method-start">163452 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">validationsOfManageCategoryPage.AddNewCategory</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initializeDriver(chrome)</span>
+                <span class="method-start">165316 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToAdminUserPage</span>
+                <span class="method-start">168108 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyNewCategoryAdding</span>
+                <span class="method-start">176196 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=verifyNewCategoryAdding status=FAILURE method=AddNewCategory.verifyNewCategoryAddin...)</span>
+                <span class="method-start">180492 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">quitdriver</span>
+                <span class="method-start">182271 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">validationsOfAdminUsersPage.CreateAndDeleteAUser</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initializeDriver(chrome)</span>
+                <span class="method-start">182966 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToAdminUserPage</span>
+                <span class="method-start">185628 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNewUserCreate</span>
+                <span class="method-start">191815 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=verifyNewUserCreate status=SUCCESS method=CreateAndDeleteAUser.verifyNewUserCreate(...)</span>
+                <span class="method-start">194495 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToAdminUserPage</span>
+                <span class="method-start">194496 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDeleteOfUser</span>
+                <span class="method-start">197398 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=verifyDeleteOfUser status=SUCCESS method=CreateAndDeleteAUser.verifyDeleteOfUser()[...)</span>
+                <span class="method-start">199076 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">quitdriver</span>
+                <span class="method-start">199078 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">validationsOfMobileSliderPage.ImageUpload</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initializeDriver(chrome)</span>
+                <span class="method-start">200891 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToMobilesliderPage</span>
+                <span class="method-start">203558 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyImageUpload</span>
+                <span class="method-start">209362 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=verifyImageUpload status=FAILURE method=ImageUpload.verifyImageUpload()[pri:0, inst...)</span>
+                <span class="method-start">212487 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">quitdriver</span>
+                <span class="method-start">212969 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">validationsOfDashBoardPage.DashBoardPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initializeDriver(chrome)</span>
+                <span class="method-start">213793 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToAdminUserPage</span>
+                <span class="method-start">216316 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">isAdminImageDisplayed</span>
+                <span class="method-start">221192 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=isAdminImageDisplayed status=SUCCESS method=DashBoardPageTest.isAdminImageDisplayed...)</span>
+                <span class="method-start">221351 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">quitdriver</span>
+                <span class="method-start">221352 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">validationsOfManageOrderPage.verifyResetButton</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initializeDriver(chrome)</span>
+                <span class="method-start">223157 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToAdminUserPage</span>
+                <span class="method-start">225430 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateResetButton</span>
+                <span class="method-start">232937 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=validateResetButton status=SUCCESS method=verifyResetButton.validateResetButton()[p...)</span>
+                <span class="method-start">235614 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">quitdriver</span>
+                <span class="method-start">235615 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

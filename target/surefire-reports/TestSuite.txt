@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 23, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 240.278 sec <<< FAILURE! - in TestSuite
+verifyNewCategoryAdding(validationsOfManageCategoryPage.AddNewCategory)  Time elapsed: 4.318 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at validationsOfManageCategoryPage.AddNewCategory.verifyNewCategoryAdding(AddNewCategory.java:22)
+
+verifyImageUpload(validationsOfMobileSliderPage.ImageUpload)  Time elapsed: 3.123 sec  <<< FAILURE!
+java.lang.AssertionError: 
+expected [�
+Alert!
+Mobile Slider Created Successfully] but found [?
+Alert!
+Mobile Slider Created Successfully]
+	at validationsOfMobileSliderPage.ImageUpload.verifyImageUpload(ImageUpload.java:37)
+
